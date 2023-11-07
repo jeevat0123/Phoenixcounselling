@@ -1,24 +1,26 @@
-name: Deploy to GoDaddy
+name: Deploy to cPanel
 
 on:
   push:
     branches:
-      - main
-  pull_request:
-    branches:
-      - main
+      - main # Change this to your main branch
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
-      - name: Checkout Code
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Deploy to GoDaddy
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      - name: Set up FTP
+        uses: wvffle/ftp-action@v2
         with:
-          server: ftp.phoenixcounselling.in
-          username: id_rsa@phoenixcounselling.in
-          password: jeeva123@#
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /public_html # Change this to your desired remote directory
+
+      - name: Copy files to FTP
+        run: |
+          lftp -e "mirror -R app/ /public_html; bye" -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }}
