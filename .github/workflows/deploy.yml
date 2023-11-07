@@ -19,8 +19,4 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: public_html/ # Change this to your desired remote directory
-
-      - name: Copy files to FTP
-        run: |
-          lftp -e "mirror -R app/ /public_html; bye" -u ${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }} ${{ secrets.FTP_SERVER }}
+          server-dir: public_html/ # Change this to your desired remote directorys
