@@ -19,4 +19,4 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: public_html/ # Change this to your desired remote directorys
+          server-dir: public_html/jeeva # Change this to your desired remote directorys
