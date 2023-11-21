@@ -14,7 +14,23 @@
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!-- bootstrap icons -->
-
+    <style>
+        @media only screen and (max-width: 500px) {
+           .card-body{
+            flex-direction: column-reverse;
+           }
+           #row{
+            flex-direction: column;
+           }
+           .card-detail h4,p {
+            text-align: center;
+           }
+           .card-body div img{
+            align-items: center;
+            margin-left: 25%;
+           }
+        }
+    </style>
 </head>
 
 <body>
@@ -181,14 +197,25 @@ aria-labelledby="offcanvasNavbarLabel" style="border-radius: 20px;padding: 35px;
                     
                     <div>
                         <br>
-                        <div style="background-color: transparent;" class="card">
-                            <div  class="card-body">
-                                <h2><b>What Happens During One On One Individual Therapy Counseling ? </b></h2>
-                                <p>
-                                    When opting for a specific consultant in the context of <b>Individual Psychotherapy</b> or <b>Individual Counseling</b>, please be aware that this selection may extend your initial appointment waiting time. The entire process typically takes around 90 minutes, which includes filling out electronic forms, the actual treatment session, and scheduling any necessary follow-up appointments. To ensure a smooth experience, we recommend arriving early to allow ample time for completing the mandatory paperwork. These documents include a comprehensive human and clinical history form, a medical agreement, a medical consent form, and a notice of privacy practices. Your therapist will rely on this information to better understand your current concerns, relevant history, and therapeutic goals."
-                                </p>
+                        <div class="card" style="background-color: transparent; height: auto;">
+                            <div class="card-body " id="row" style="display: flex;" >
+                                 <div style="
+                                    height: 100%;
+                                    align-items: center;
+                                    ">                            
+                                    <img src="/app/assets/img/What_Happens_During-removebg-preview.png" alt="" style="
+                                    width: 200px;
+                                    height: 170px;
+                                    margin-left: 0;
+                                    ">
+                                </div>
+                                <div class="card-detail" style="overflow: hidden; padding:15px">
+                                    <h4><b>What Happens During One On One Individual Therapy Counseling ?</b></h4>
+                                    <p>
+                                        When opting for a specific consultant in the context of <b>Individual Psychotherapy</b> or <b>Individual Counseling</b>, please be aware that this selection may extend your initial appointment waiting time. The entire process typically takes around 90 minutes, which includes filling out electronic forms, the actual treatment session, and scheduling any necessary follow-up appointments. To ensure a smooth experience, we recommend arriving early to allow ample time for completing the mandatory paperwork. These documents include a comprehensive human and clinical history form, a medical agreement, a medical consent form, and a notice of privacy practices. Your therapist will rely on this information to better understand your current concerns, relevant history, and therapeutic goals.
+                                </div> 
                             </div>
-                        </div>
+                        </div>   
                         <br>
                         <div class="text-center">
                             <button style="background-color: #e27a11!important;
@@ -208,34 +235,71 @@ aria-labelledby="offcanvasNavbarLabel" style="border-radius: 20px;padding: 35px;
                         </div><br><br>
                     </div>
                 </div>
-                <div class="container" style="max-width: 100%;">
-                    <h3><b>Benefits of Individual Counselling:</b></h3>
-                    <div class="card" style="background-color: transparent;">
-                        <div class="card-body">
-                        <h4><b>Self Awareness:</b></h4>
-                        <p>
-                            Self-awareness is understanding your thoughts, emotions, behaviors, strengths, and weaknesses. It's vital for personal growth, emotional intelligence, and effective relationships, in both personal and professional life.ll rely on this information to better understand your current concerns, relevant history, and therapeutic goals."
-                        </p>
-                    </div>
-                    </div>
-                    <br>
-                    <div class="card" style="background-color: transparent;">
-                        <div class="card-body">
-                        <h4><b>Self Exploration:</b></h4>
-                        <p>
-                            Self-exploration in individual counseling involves deep introspection to understand one's emotions, thoughts, and experiences. It's a crucial process for personal growth, self-awareness, and addressing issues within a therapeutic setting.
-                        </p>
-                    </div>
+                <h3><b>Benefits of Individual Counselling:</b></h3>
+            <div class="container-fluid aboutme" style="max-width: 100%; ">
+                <div class="card" style="background-color: transparent; height: auto;">
+                    <div class="card-body" style="display: flex;">
+                        <div class="card-detail" style="overflow: hidden;">
+                            <h4><b>Self Awareness:</b></h4>
+                            <p>
+                                Self-awareness is understanding your thoughts, emotions, behaviors, strengths, and weaknesses. It's vital for personal growth, emotional intelligence, and effective relationships, in both personal and professional life.ll rely on this information to better understand your current concerns, relevant history, and therapeutic goals."
+                            </p>
+                        </div>
+                     <div style="
+                        height: 100%;
+                        align-items: center;
+                        ">                            
+                        <img src="/app/assets/img/Self-awareness_png-removebg-preview.png" alt="" style="
+                        width: 170px;
+                        height: 170px;
+                          ">
+                     </div>
+                </div>
                 </div>
                 <br>
-                <div class="card" style="background-color: transparent;">
-                    <div class="card-body">
-                        <h4><b>Reliable Communication:</b></h4>
-                        <p>
-                           Reliable communication in individual counseling is vital. It fosters trust, enables open dialogue, and helps the counselor understand the client's needs, leading to effective support and personal growth.
-                        </p>
-                </div>
+              <div class="card" style="background-color: transparent; height: auto;">
+                    <div class="card-body " id="row" style="display: flex; ">
+                         <div style="
+                            height: 100%;
+                            align-items: center;
+                            ">                            
+                            <img src="/app/assets/img/Self-exploration-removebg-preview.png" alt="" style="
+                            width: 170px;
+                            height: 170px;
+                            margin-left: 0;
+                            ">
+                        </div>
+                        <div class="card-detail" style="overflow: hidden; padding:15px">
+                            <h4><b>Self-exploration:</b></h4>
+                            <p>
+                                Self-exploration in individual counseling involves deep introspection to understand one's emotions, thoughts, and experiences. It's a crucial process for personal growth, self-awareness, and addressing issues within a therapeutic setting.
+                        </div> 
+                    </div>
+                </div>   
                 <br>
+                <div class="card" style="background-color: transparent; height: auto;">
+                    <div class="card-body" style="display: flex;">
+                        <div class="card-detail" style="overflow: hidden;">
+                            <h4><b>Reliable Communication:</b></h4>
+                            <p>
+                                Reliable communication in individual counseling is vital. It fosters trust, enables open dialogue, and helps the counselor understand the client's needs, leading to effective support and personal growth.                            
+                        </div>
+                     <div style="
+                        height: 100%;
+                        align-items: center;
+                        ">                            
+                        <img src="/app/assets/img/Reliable_communication-removebg-preview.png" alt="" style="
+                        width: 170px;
+                        height: 170px;
+                        margin-left: 0;
+                          ">
+                     </div>
+                </div>
+                </div>  
+                   
+                    
+              
+              
             </div>
             <br>
             <div class="text-center">

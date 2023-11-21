@@ -17,7 +17,6 @@ html {
 body {
   margin: 0 !important;
   background-color: rgb(255, 245, 233) !important;
-  cursor:url(/assets/img/cursor-hand.gif), auto;
 }
 
 .customContainer {
@@ -258,6 +257,9 @@ i.bi.count{
   .adolescenceCounsellingBanner{
     width: 19rem;
   }
+  .service_image{
+    width: 20rem;
+  }
 }
 
 /* Styles for tablets (768px to 1023px) */
@@ -268,7 +270,6 @@ i.bi.count{
     .landingImageDesktop{
       display: none;
     }
-    
 }
 
 /* Styles for small laptops and desktops (1024px to 1279px) */

@@ -14,6 +14,22 @@
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!-- bootstrap icons -->
+    <style>
+        @media only screen and (max-width: 500px) {
+           .card-body{
+            flex-direction: column-reverse;
+           }
+           #row{
+            flex-direction: column;
+           }
+           .card-detail h4,p {
+            text-align: center;
+           }
+           .card-body div img{
+            align-items: center;
+           }
+        }
+    </style>
 
 </head>
 
@@ -160,8 +176,10 @@ aria-labelledby="offcanvasNavbarLabel" style="border-radius: 20px;padding: 35px;
                                     This form of counseling is tailored to address a wide range of adolescent issues, including academic stress, peer pressure, identity formation, and emotional well-being. Adolescents often grapple with complex emotions and self-discovery, and counseling offers a platform for self-expression and understanding.
                                 </p>
                             </div>
+                            <br>
                         </div>
                     </div>
+                    <br>
                     <div class="text-center">
                         <button style="background-color: #e27a11!important;
                         border-radius: 5px;
@@ -178,67 +196,92 @@ aria-labelledby="offcanvasNavbarLabel" style="border-radius: 20px;padding: 35px;
                         onclick="Calendly.initPopupWidget({url: 'https://calendly.com/uma_phoenix_counselling'});return false;">Book Appointment</a>
                         <!-- Calendly link widget end -->
                     </div>
-                    
+                    <br>
                     <div>
                         <br>
-                        <div style="background-color: transparent;" class="card">
-                            <div  class="card-body">
-                                <h2><b>What is Child and Adolescence Counselling?</b></h2>
-                                <p>
-                                    Child and adolescence counseling is a specialized branch of counseling and psychotherapy that focuses on providing support and guidance to children and teenagers who are facing emotional, behavioral, or developmental challenges. This form of counseling is tailored to address the unique needs and concerns of young individuals as they navigate the complexities of childhood and adolescence.
-                                </p>
-                                <p>
-                                    Child and adolescent counseling includes variety of therapeutic techniques, such as play therapy, art therapy, cognitive-behavioral therapy, and talk therapy, tailored to the child's age and needs. The goal is to help young clients develop self-awareness, emotional intelligence, and coping skills, empowering them to overcome challenges, build resilience, and thrive in various aspects of their lives.
-                                </p>
-                            </div>
+                        <div class="card" style="background-color: transparent; height: auto;">
+                            <div class="card-body" style="display: flex;">
+                                <div class="card-detail" style="overflow: hidden;">
+                                    <h4><b>What is Child and Adolescence Counselling?</b></h4>
+                                    <p>
+                                        Child and adolescence counseling is a specialized branch of counseling and psychotherapy that focuses on providing support and guidance to children and teenagers who are facing emotional, behavioral, or developmental challenges. This form of counseling is tailored to address the unique needs and concerns of young individuals as they navigate the complexities of childhood and adolescence.
+                                        Child and adolescent counseling includes variety of therapeutic techniques, such as play therapy, art therapy, cognitive-behavioral therapy, and talk therapy, tailored to the child's age and needs. The goal is to help young clients develop self-awareness, emotional intelligence, and coping skills, empowering them to overcome challenges, build resilience, and thrive in various aspects of their lives."
+                                    </p>
+                                </div>
+                             <div style="
+                                height: 100%;
+                                align-items: center;
+                                ">                            
+                                <img src="/app/assets/img/child/Adolescent-therapy.png" alt="" style="
+                                width: 220px;
+                                height: 170px;
+                                  ">
+                             </div>
                         </div>
-                        <br>
-                        <div class="text-center">
-                            <button style="background-color: #e27a11!important;
-                            border-radius: 5px;
-                            font-size: 17px;
-                            font-family: 'Source Sans Pro', sans-serif;
-                            padding: 6px 18px;
-                            color: white;
-                            border: none;">
-                            <!-- Calendly link widget begin -->
-                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
-                            async></script>
-                            <a style="text-decoration:none; color:white;" href=""
-                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/uma_phoenix_counselling'});return false;">Book Appointment</a>
-                            <!-- Calendly link widget end -->
-                        </div><br><br>
-                    </div>
-                </div>
-                <div class="container" style="max-width: 100%;">
-                    <h3><b>Benefits of Child and Adolescence counselling:</b></h3>
-                    <div class="card" style="background-color: transparent;">
-                        <div class="card-body">
-                        <h4><b>Emotional Support:</b></h4>
-                        <p>
-                            Emotional support in child and adolescence counseling is a vital resource, offering a safe space for young individuals to express their feelings and concerns, reducing stress, enhancing emotional intelligence, and boosting self-confidence. It equips them with valuable coping strategies, helps manage anxiety, and aids in healing from trauma and grief, ultimately fostering emotional resilience and personal growth as they transition into adulthood.
-                        </p>
-                    </div>
+                        </div>
+                       <br>
                     </div>
                     <br>
-                    <div class="card" style="background-color: transparent;">
-                        <div class="card-body">
-                        <h4><b>Improved Communication:</b></h4>
-                        <p>
-                            Self-exploration in individual counseling involves deep introspection to understand one's emotions, thoughts, and experiences. It's a crucial process for personal growth, self-awareness, and addressing issues within a therapeutic setting.
-                        </p>
+                </div>
+                <h3><b>Benefits of Child and Adolescence counselling</b></h3>
+                <br>
+            <div class="container-fluid aboutme" style="max-width: 100%; ">
+                <div class="card" style="background-color: transparent; height: auto;">
+                    <div class="card-body " id="row" style="display: flex; ">
+                         <div style="
+                            height: 100%;
+                            align-items: center;
+                            ">                            
+                            <img src="/app/assets/img/child/Emotional support.png" alt="" style="
+                            width: 200px;
+                            height: 180px;
+                            ">
+                        </div>
+                        <div class="card-detail" style="overflow: hidden; padding:15px">
+                            <h4><b> Emotional Support:</b></h4>
+                            <p>Emotional support in child and adolescence counseling is a vital resource, offering a safe space for young individuals to express their feelings and concerns, reducing stress, enhancing emotional intelligence, and boosting self-confidence. It equips them with valuable coping strategies, helps manage anxiety, and aids in healing from trauma and grief, ultimately fostering emotional resilience and personal growth as they transition into adulthood.
+                                
+                        </div> 
                     </div>
-                </div>
+                </div>   
+                
                 <br>
-                <div class="card" style="background-color: transparent;">
-                    <div class="card-body">
-                        <h4><b>Behavioral Improvement:</b></h4>
-                        <p>
-                            Behavioral improvement in adolescence counseling is about understanding and addressing the challenges young individuals face. It involves teaching healthy coping strategies, improving communication, fostering goal-setting and decision-making skills, and encouraging positive reinforcement. Family involvement often plays a crucial role, leading to improved behaviors and personal growth during this critical life stage.
-                        </p>
+                <div class="card" style="background-color: transparent; height: auto;">
+                    <div class="card-body" style="display: flex;">
+                        <div class="card-detail" style="overflow: hidden;">
+                            <h4><b>Improved Communication:</b></h4>
+                            <p>Improved communication is a fundamental aspect of adolescent development, promoting healthy relationships, effective self-expression, and constructive conflict resolution. During adolescence, young individuals undergo significant emotional and cognitive changes, which can lead to misunderstandings and conflicts with peers, family, and authority figures. Improved communication skills help adolescents express their thoughts and emotions more clearly, fostering better connections with those around them.                            
+                        </div>
+                     <div style="
+                        height: 100%;
+                        align-items: center;
+                        ">                            
+                        <img src="/app/assets/img/child/Improved Communication.png" alt="" style="
+                        width: 170px;
+                        height: 170px;
+                          ">
+                     </div>
                 </div>
-                <br>
+                </div> 
+                <br> 
+                <div class="card" style="background-color: transparent; height: auto;">
+                    <div class="card-body " id="row" style="display: flex; ">
+                         <div style="
+                            height: 100%;
+                            align-items: center;
+                            ">                            
+                            <img src="/app/assets/img/child/Behavioral Improvement.png" alt="" style="
+                            width: 200px;
+                            height: 170px;
+                            ">
+                        </div>
+                        <div class="card-detail" style="overflow: hidden; padding:15px">
+                            <h4><b> Behavioral Improvement:</b></h4>
+                            <p>
+                               Behavioral improvement in adolescence counseling is about understanding and addressing the challenges young individuals face. It involves teaching healthy coping strategies, improving communication, fostering goal-setting and decision-making skills, and encouraging positive reinforcement. Family involvement often plays a crucial role, leading to improved behaviors and personal growth during this critical life stage.
+                        </div> 
+                    </div>
+                </div>    
             </div>
             <br>
             <div class="text-center">
@@ -256,12 +299,8 @@ aria-labelledby="offcanvasNavbarLabel" style="border-radius: 20px;padding: 35px;
                 <a style="text-decoration:none; color:white;" href=""
                 onclick="Calendly.initPopupWidget({url: 'https://calendly.com/uma_phoenix_counselling'});return false;">Book Appointment</a>
                 <!-- Calendly link widget end -->
-            </div>
-        </div>
-    </div>
-</button>
-</div>
-</div>
+            </div>          
+
 <!-- banner -->
 <!-- service -->
 <div class="container text-center mt-5">
