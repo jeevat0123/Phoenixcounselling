@@ -51,7 +51,11 @@ body {
     font-size: 22px;
     color: white;
 }
-
+.img-fluid {
+  padding: 0% 20% 0% 20%;
+  max-width: 100%;
+  height: auto;
+}
 .customCard {
     --bs-bg-opacity: 1;
     background-color: antiquewhite !important;
@@ -259,6 +263,9 @@ i.bi.count{
   }
   .service_image{
     width: 20rem;
+  }
+  .img-fluid{
+    padding: 0%;
   }
 }
 
