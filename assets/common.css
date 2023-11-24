@@ -200,6 +200,10 @@ i.bi.count{
 .adolescenceCounsellingBanner{
   width: 30rem;
 }
+.howWeWorkBase{
+  max-width: 80%;
+}
+
   /* footer */
   footer#footer{
     background-image: url(img/footerBg.png);
@@ -266,6 +270,12 @@ i.bi.count{
   }
   .img-fluid{
     padding: 0%;
+  }
+  .step-name{
+    font-size: 10px;
+  }
+  .howWeWorkBase{
+    max-width: 100%;
   }
 }
 
