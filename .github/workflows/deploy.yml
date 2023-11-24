@@ -1,22 +1,22 @@
-name: Deploy to cPanel
+# name: Deploy to cPanel
 
-on:
-  push:
-    branches:
-      - main # Change this to your main branch
+# on:
+#   push:
+#     branches:
+#       - main # Change this to your main branch
 
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v2
 
-      - name: Set up FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: public_html/jeeva/ # Change this to your desired remote directorys
+#       - name: Set up FTP
+#         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+#         with:
+#           server: ${{ secrets.FTP_SERVER }}
+#           username: ${{ secrets.FTP_USERNAME }}
+#           password: ${{ secrets.FTP_PASSWORD }}
+#           server-dir: public_html/jeeva/ # Change this to your desired remote directorys
