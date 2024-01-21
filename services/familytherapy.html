@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PhoenixCounselling</title>
+    <link rel="stylesheet" href="../assets/common.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link href="../assets/img/favicon.png" rel="icon">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- bootstrap icons -->
+    <style>
+        @media only screen and (max-width: 500px) {
+           .card-body{
+            flex-direction: column-reverse;
+           }
+           #row{
+            flex-direction: column;
+           }
+           .card-detail h4,p {
+            text-align: center;
+           }
+           .card-body div img{
+            align-items: center;
+           }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav class="navbar main-bg-color">
+        <div class="container navMainContainer">
+            <div class="container-fluid navSubContainer">
+                <div class="row align-items-start">
+                    <div class="col-2">
+                        <a class="navbar-brand" href="../index.html" style="padding-right: 5%;">
+                            <img src="../assets/img/logo.png" class=" logo" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-9" style="padding-top: 3%;">
+                        <div class="row navItems">
+                            <div class="col">
+                                <ul style="list-style: none;">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="./uc.html" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <b>Our service's</b>
+                                    </a>
+                                    <ul class="dropdown-menu" style="background-color: #bbd5b9;">
+                                        <li><a class="dropdown-item" href="../services/individualcounseling.html"><b>1. </b>Individual counseling</a></li>
+                                        <li><a class="dropdown-item" href="../services/couplecounseling.html"><b>2. </b>Couple counseling</a></li>
+                                        <li><a class="dropdown-item active" href="../services/familytherapy.html"><b>3. </b>Family therapy</a></li>
+                                        <li><a class="dropdown-item" href="../services/adolescentcounseling.html"><b>4. </b>Adolescent counseling</a></li>
+                                        <li><a class="dropdown-item" href="../services/grouptherapy.html"><b>5. </b>Group therapy</a></li>
+                                        <li><a class="dropdown-item" href="../services/hypnotherapy.html"><b>6. </b>Hypnotherapy</a></li>
+                                        <li><a class="dropdown-item" href="../services/epa.html"><b>7. </b>Corporate wellness program (EAP)</a></li>
+                                        <li><a class="dropdown-item" href="../services/trainingsandworkshops.html"><b>8. </b>Training and workshops</a></li>
+                                        <li><a class="dropdown-item" href="../services/mentalhealthadvocacy.html"><b>9. </b>Mental health advocacy</a></li>
+                                        <li><a class="dropdown-item" href="../services/onlinecounseling.html"><b>10. </b>Online counseling</a></li>
+                                        <!-- <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="./uc.html">Something else here</a></li> -->
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col" style="text-align: right;">
+                            <button style="background-color: #e27a11!important;
+                            border-radius: 5px;
+                            font-size: 17px;
+                            font-family: 'Source Sans Pro', sans-serif;
+                            padding: 6px 18px;
+                            color: white;
+                            border: none;"> 
+                            <!-- Calendly link widget begin -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                            <a style="text-decoration:none; color:white;" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/uma_phoenix_counselling'});return false;">Book Appointment</a>
+                            <!-- Calendly link widget end -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 burgerCol">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- sideBar -->
+<div class="offcanvas offcanvas-end main-bg-color" tabindex="-1" id="offcanvasNavbar"
+aria-labelledby="offcanvasNavbarLabel" style="border-radius: 20px;padding: 35px;">
+<div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+        <img src="../assets/img/logo.png" alt="logo" style="width: 8rem;">
+    </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html"><b>Home</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../about.html"><b>About Us</b></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="./uc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <b>Our service's</b>
+            </a>
+            <ul class="dropdown-menu" style="background-color: #bbd5b9;">
+                <li><a class="dropdown-item" href="../services/individualcounseling.html"><b>1. </b>Individual counseling</a></li>
+                <li><a class="dropdown-item" href="../services/couplecounseling.html"><b>2. </b>Couple counseling</a></li>
+                <li><a class="dropdown-item active" href="../services/familytherapy.html"><b>3. </b>Family therapy</a></li>
+                <li><a class="dropdown-item" href="../services/adolescentcounseling.html"><b>4. </b>Adolescent counseling</a></li>
+                <li><a class="dropdown-item" href="../services/grouptherapy.html"><b>5. </b>Group therapy</a></li>
+                <li><a class="dropdown-item" href="../services/hypnotherapy.html"><b>6. </b>Hypnotherapy</a></li>
+                <li><a class="dropdown-item" href="../services/epa.html"><b>7. </b>Corporate wellness program (EAP)</a></li>
+                <li><a class="dropdown-item" href="../services/trainingsandworkshops.html"><b>8. </b>Training and workshops</a></li>
+                <li><a class="dropdown-item" href="../services/mentalhealthadvocacy.html"><b>9. </b>Mental health advocacy</a></li>
+                <li><a class="dropdown-item" href="../services/onlinecounseling.html"><b>10. </b>Online Counseling</a></li>
+                <!-- <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./uc.html">Something else here</a></li> -->
+            </ul>
+        </li>
+    <li><a class="nav-link" href="https://blog.phoenixcounselling.in/"><b>Blog</b></a></li>
+
+    </ul>
+    <!-- <form class="d-flex mt-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form> -->
+</div>
+</div>
+<!-- sideBar -->
+</nav>
+<!-- navigation -->
+<!-- about -->
+<div class="container-fluid aboutme">
+    <div class="container" style="max-width: 100%; padding: 2%;">
+        <div class="banner">
+            <div
+            style="text-align: center;background: #fbd9ac21;border-radius: 50px;">
+            <h1>Family Therapy</h1>
+            <h1>
+                Family counselling service in Panvel Mumbai
+            </h1>
+            <p><i>Discover healing at Phoenix Psychological Services in Navi Mumbai. Expert psychotherapist offering
+                personalized online and offline therapy for a balanced and resilient life.</i></p>
+            </div>
+        </div>
+    </div>
+    <!-- banner -->
+    <div class="container" style="max-width: 85%;">
+        <div class="">
+            <div style="background: #fff5e9;border-radius: 50px;padding-bottom: 15px;">
+                <div class="row">
+                    <div style="text-align: center;" class="col">
+                        <img class="service_image" src="../assets/img/family thery/Family Therapy.png" alt="">
+                    </div>
+                    <div style="font-size: 1.2rem; padding-top: 5%;" class="">
+                        <div style="background-color: transparent; border: none;" class="card">
+                            <div class="card-body">
+                                <p style="text-align: justify;">
+                                    <b>Family counseling in Panvel, Mumbai,</b> is a specialized form of psychotherapy designed to improve familial relationships and address various challenges. Within the context of family counseling in Panvel, experienced therapists work closely with family members to achieve vital objectives. Foremost among these objectives is the enhancement of communication within the family. Through the services provided by family counseling in Panvel, Mumbai, family members are equipped with the essential skills to express themselves effectively, actively listen, and gain a deeper understanding of one another's viewpoints. This therapeutic approach is particularly valuable for addressing conflicts, promoting harmonious relationships, and fostering emotional growth within the family unit. Family counseling services in Panvel offer a supportive and structured environment for families to work through their unique challenges and emerge with stronger bonds and a greater sense of unity.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button style="background-color: #e27a11!important;
+                        border-radius: 5px;
+                        font-size: 17px;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        padding: 6px 18px;
+                        color: white;
+                        border: none;">
+                        <!-- Calendly link widget begin -->
+                        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                        async></script>
+                        <a style="text-decoration:none; color:white;" href=""
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/uma_phoenix_counselling'});return false;">Book Appointment</a>
+                        <!-- Calendly link widget end -->
+                    </div>
+                    <div>
+                        <br>
+                        <br>
+                        <h3><b>Benefits of Family Counseling Services   </b></h3>
+                        <div class="card" style="background-color: transparent; height: auto;">
+                            <div class="card-body" style="display: flex;">
+                                <div class="card-detail" style="overflow: hidden;">
+                                    <h4><b>Improved Communication:</b></h4>
+                                    <p>
+                                         Family counseling helps family members learn effective communication skills, allowing them to express their thoughts and emotions more openly and listen to each other better. Enhanced communication can lead to healthier relationships within the family.
+                                        Conflict Resolution: Family counseling equips families with strategies for resolving conflicts in a constructive manner. It helps family members understand the root causes of disagreements and provides tools to reach mutually agreeable solutions.
+                                        Strengthened Relationships: Family counseling can help strengthen the bonds within a family. By addressing underlying issues and working together to find solutions, family members can develop a deeper understanding of each other and build stronger, more supportive relationships.
+                                        Certainly, here are five frequently asked questions (FAQs) related to family counseling:
+                                        "
+                                    </p>
+                                </div>
+                             <div style="
+                                height: 100%;
+                                align-items: center;
+                                ">                            
+                                <img src="../assets/img/family thery/improved_communication-removebg-preview.png" alt="" style="
+                                width: 170px;
+                                height: 170px;
+                                margin-top: 15px;
+                                  ">
+                             </div>
+                        </div>
+                        </div>
+                        <br>
+                       
+                        </div><br>
+                    </div>
+                </div>
+            <div class="container-fluid aboutme" style="max-width: 100%; ">
+                <div class="card" style="background-color: transparent; height: auto;">
+                    <div class="card-body " id="row" style="display: flex; ">
+                         <div style="
+                            height: 100%;
+                            align-items: center;
+                            ">                            
+                            <img src="../assets/img/family thery/Conflict_Resolution_family-removebg-preview.png" alt="" style="
+                            width: 200px;
+                            height: 180px;
+                            ">
+                        </div>
+                        <div class="card-detail" style="overflow: hidden; padding:15px">
+                            <h4><b> Conflict Resolution:</b></h4>
+                            <p> Family counseling equips families with strategies for resolving conflicts in a constructive manner. It helps family members understand the root causes of disagreements and provides tools to reach mutually agreeable solutions.
+    
+                        </div> 
+                    </div>
+                </div>   
+                
+                <br>
+                <div class="card" style="background-color: transparent; height: auto;">
+                    <div class="card-body" style="display: flex;">
+                        <div class="card-detail" style="overflow: hidden;">
+                            <h4><b>Strengthened Relationships:</b></h4>
+                            <p>
+                                 Family counseling can help strengthen the bonds within a family. By addressing underlying issues and working together to find solutions, family members can develop a deeper understanding of each other and build stronger, more supportive relationships.                            
+                        </div>
+                     <div style="
+                        height: 100%;
+                        align-items: center;
+                        ">                            
+                        <img src="../assets/img/family thery/Strengthened_Relationshipsas-removebg-preview.png" alt="" style="
+                        width: 170px;
+                        height: 170px;
+                          ">
+                     </div>
+                </div>
+                </div> 
+                <br> 
+                
+            </div>
+            <br>
+            <div class="text-center">
+                <button style="background-color: #e27a11!important;
+                border-radius: 5px;
+                font-size: 17px;
+                font-family: 'Source Sans Pro', sans-serif;
+                padding: 6px 18px;
+                color: white;
+                border: none;">
+                <!-- Calendly link widget begin -->
+                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                async></script>
+                <a style="text-decoration:none; color:white;" href=""
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/uma_phoenix_counselling'});return false;">Book Appointment</a>
+                <!-- Calendly link widget end -->
+            </div>
+        </div>
+    </div>
+</button>
+</div>
+</div>
+<div class="container text-center mt-5">
+    <h1 style="text-align: center;"><b>Certainly, here are five frequently asked questions (FAQs) related to family counseling</b></h1>
+    <div class="t1">
+        <p class="d-inline-flex gap-1">
+            <button style="border: 2px solid #bbd5b9; border-radius: 15px;" class="btn mt-2" type="button"
+            data-bs-toggle="collapse" data-bs-target="#t1" aria-expanded="false" aria-controls="t1">
+            <b style="color: #e27a11;"><i class="bi bi-box-arrow-down"></i></b>  What is family counseling, and how does it work?
+        </button>
+    </p>
+    <div class="collapse" id="t1">
+        <div style="background-color: #c2d9c1; border: 2px dotted green;" class="card card-body">
+           Family counseling is a form of therapy that focuses on improving communication and resolving conflicts within a family. It involves sessions with a trained therapist who helps family members navigate and address their issues through discussions, activities, and strategies.
+        </div>
+    </div>
+</div>
+<div class="t2">
+    <p class="d-inline-flex gap-1">
+        <button style="border: 2px solid #bbd5b9; border-radius: 15px;" class="btn mt-2" type="button"
+        data-bs-toggle="collapse" data-bs-target="#t2" aria-expanded="false" aria-controls="t2">
+        <b style="color: #e27a11;"><i class="bi bi-box-arrow-down"></i></b> When should a family consider seeking counseling?
+
+    </button>
+</p>
+<div class="collapse" id="t2">
+    <div style="background-color: #c2d9c1; border: 2px dotted green;" class="card card-body">
+        Families may consider counseling when they are facing challenges such as ongoing conflicts, breakdowns in communication, parenting issues, major life transitions, or when one or more family members are experiencing emotional or behavioral problems.
+    </div>
+</div>
+</div>
+<div class="t3">
+    <p class="d-inline-flex gap-1">
+        <button style="border: 2px solid #bbd5b9; border-radius: 15px;" class="btn mt-2" type="button"
+        data-bs-toggle="collapse" data-bs-target="#t3" aria-expanded="false" aria-controls="t3">
+        <b style="color: #e27a11;"><i class="bi bi-box-arrow-down"></i></b>Who should attend family counseling sessions?
+        </button>
+</p>
+<div class="collapse" id="t3">
+    <div style="background-color: #c2d9c1; border: 2px dotted green;" class="card card-body">
+        Ideally, all immediate family members should participate in family counseling to address the dynamics within the household. However, in some cases, a subset of family members or individuals may be involved, depending on the specific issues being addressed.
+    </div>
+</div>
+</div>
+<div class="t4">
+    <p class="d-inline-flex gap-1">
+        <button style="border: 2px solid #bbd5b9; border-radius: 15px;" class="btn mt-2" type="button"
+        data-bs-toggle="collapse" data-bs-target="#t4" aria-expanded="false" aria-controls="t4">
+        <b style="color: #e27a11;"><i class="bi bi-box-arrow-down"></i></b>How long does family counseling typically last, and how frequent are the sessions?
+        </button>
+</p>
+<div class="collapse" id="t4">
+    <div style="background-color: #c2d9c1; border: 2px dotted green;" class="card card-body">
+        The duration and frequency of family counseling sessions can vary depending on the specific needs of the family. Sessions may be weekly or bi-weekly, and the overall length of therapy may range from a few months to longer, depending on progress and goals.
+    </div>
+</div>
+</div>
+<div class="t5">
+    <p class="d-inline-flex gap-1">
+        <button style="border: 2px solid #bbd5b9; border-radius: 15px;" class="btn mt-2" type="button"
+        data-bs-toggle="collapse" data-bs-target="#t5" aria-expanded="false" aria-controls="t5">
+        <b style="color: #e27a11;"><i class="bi bi-box-arrow-down"></i></b>Is family counseling confidential, and what should we expect in terms of privacy?
+    </button>
+</p>
+<div class="collapse" id="t5">
+    <div style="background-color: #c2d9c1; border: 2px dotted green;" class="card card-body">
+        Family counseling sessions are generally confidential, but the exact confidentiality policies may vary depending on the therapist or counseling center. The therapist will typically discuss confidentiality with the family during the initial session and outline any exceptions, such as situations involving safety concerns or legal requirements. It's important to establish trust and open communication with the therapist regarding privacy concerns.
+    </div>
+</div>
+</div>
+</div>
+<!-- about -->
+<footer id="footer">
+    <div class="text-center">
+        <img src="../assets/img/logo.png" class="logo" alt=""><br><br>
+        <h2><b><u>Contact Us</u></b></h2>
+        <h5>Panvel,Navi mumbai, Maharashtra, India.</h5>
+        <p> 
+            <a style="text-decoration: none; font-weight: 500;color: black;" href="tel:+91 9643448705"><i style="color: #e27a11;" class="bi bi-telephone-fill"></i>+91 9643448705</a>  
+            <a style="text-decoration: none; font-weight: 500;color: black;" href="tel:+91 9867605239"><i style="color: #e27a11;" class="bi bi-telephone-fill"></i>+91 9867605239</a> 
+            <a style="text-decoration: none; font-weight: 500;color: black;" href="mailto:phoenixforcounselling@gmail.com"><i style="color: #e27a11;" class="bi bi-envelope-fill"></i>phoenixforcounselling@gmail.com</a>
+        </p>
+    </div>
+    <img src="../assets/img/footer.png" alt="footerImg" style="width: 100%;">
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+crossorigin="anonymous"></script>
+</body>
+
+</html>

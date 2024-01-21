@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PhoenixCounselling</title>
+    <link rel="stylesheet" href="../assets/common.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link href="../assets/img/favicon.png" rel="icon">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- bootstrap icons -->
+    <style>
+        @media only screen and (max-width: 500px) {
+           .card-body{
+            flex-direction: column-reverse;
+           }
+           #row{
+            flex-direction: column;
+           }
+           .card-detail h4,p {
+            text-align: center;
+           }
+           .card-body div img{
+            align-items: center;
+            /* margin-left: 25%; */
+           }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav class="navbar main-bg-color">
+        <div class="container navMainContainer">
+            <div class="container-fluid navSubContainer">
+                <div class="row align-items-start">
+                    <div class="col-2">
+                        <a class="navbar-brand" href="../index.html" style="padding-right: 5%;">
+                            <img src="../assets/img/logo.png" class=" logo" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-9" style="padding-top: 3%;">
+                        <div class="row navItems">
+                            <div class="col">
+                                <ul style="list-style: none;">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="./uc.html" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <b>Our service's</b>
+                                    </a>
+                                    <ul class="dropdown-menu" style="background-color: #bbd5b9;">
+                                        <li><a class="dropdown-item" href="../services/individualcounseling.html"><b>1. </b>Individual counseling</a></li>
+                                        <li><a class="dropdown-item" href="../services/couplecounseling.html"><b>2. </b>Couple counseling</a></li>
+                                        <li><a class="dropdown-item" href="../services/familytherapy.html"><b>3. </b>Family therapy</a></li>
+                                        <li><a class="dropdown-item" href="../services/adolescentcounseling.html"><b>4. </b>Adolescent counseling</a></li>
+                                        <li><a class="dropdown-item" href="../services/grouptherapy.html"><b>5. </b>Group therapy</a></li>
+                                        <li><a class="dropdown-item" href="../services/hypnotherapy.html"><b>6. </b>Hypnotherapy</a></li>
+                                        <li><a class="dropdown-item" href="../services/epa.html"><b>7. </b>Corporate wellness program (EAP)</a></li>
+                                        <li><a class="dropdown-item" href="../services/trainingsandworkshops.html"><b>8. </b>Training and workshops</a></li>
+                                        <li><a class="dropdown-item" href="../services/mentalhealthadvocacy.html"><b>9. </b>Mental health advocacy</a></li>
+                                        <li><a class="dropdown-item active" href="../services/onlinecounseling.html"><b>10. </b>Online counseling</a></li>
+                                        <!-- <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="./uc.html">Something else here</a></li> -->
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col" style="text-align: right;">
+                            <button style="background-color: #e27a11!important;
+                            border-radius: 5px;
+                            font-size: 17px;
+                            font-family: 'Source Sans Pro', sans-serif;
+                            padding: 6px 18px;
+                            color: white;
+                            border: none;"> 
+                            <!-- Calendly link widget begin -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+                            <a style="text-decoration:none; color:white;" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/uma_phoenix_counselling'});return false;">Book Appointment</a>
+                            <!-- Calendly link widget end -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 burgerCol">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- sideBar -->
+<div class="offcanvas offcanvas-end main-bg-color" tabindex="-1" id="offcanvasNavbar"
+aria-labelledby="offcanvasNavbarLabel" style="border-radius: 20px;padding: 35px;">
+<div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+        <img src="../assets/img/logo.png" alt="logo" style="width: 8rem;">
+    </h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html"><b>Home</b></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../about.html"><b>About Us</b></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="./uc.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <b>Our service's</b>
+            </a>
+            <ul class="dropdown-menu" style="background-color: #bbd5b9;">
+                <li><a class="dropdown-item" href="../services/individualcounseling.html"><b>1. </b>Individual counseling</a></li>
+                <li><a class="dropdown-item" href="../services/couplecounseling.html"><b>2. </b>Couple counseling</a></li>
+                <li><a class="dropdown-item" href="../services/familytherapy.html"><b>3. </b>Family therapy</a></li>
+                <li><a class="dropdown-item" href="../services/adolescentcounseling.html"><b>4. </b>Adolescent counseling</a></li>
+                <li><a class="dropdown-item" href="../services/grouptherapy.html"><b>5. </b>Group therapy</a></li>
+                <li><a class="dropdown-item" href="../services/hypnotherapy.html"><b>6. </b>Hypnotherapy</a></li>
+                <li><a class="dropdown-item" href="../services/epa.html"><b>7. </b>Corporate wellness program (EAP)</a></li>
+                <li><a class="dropdown-item" href="../services/trainingsandworkshops.html"><b>8. </b>Training and workshops</a></li>
+                <li><a class="dropdown-item" href="../services/mentalhealthadvocacy.html"><b>9. </b>Mental health advocacy</a></li>
+                <li><a class="dropdown-item active" href="../services/onlinecounseling.html"><b>10. </b>Online Counseling</a></li>
+                <!-- <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./uc.html">Something else here</a></li> -->
+            </ul>
+        </li>
+        <li><a class="nav-link" href="https://blog.phoenixcounselling.in/"><b>Blog</b></a></li>
+    </ul>
+    <!-- <form class="d-flex mt-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form> -->
+</div>
+</div>
+<!-- sideBar -->
+</nav>
+<!-- navigation -->
+<!-- about -->
+<div class="container-fluid aboutme">
+    <div class="container" style="max-width: 100%; padding: 2%;">
+        <div class="banner">
+            <div
+            style="text-align: center;background: #fbd9ac21;border-radius: 50px;">
+            <h1>
+                Online Counselling
+            </h1>
+            <p><i>Discover healing at Phoenix Psychological Services in Navi Mumbai. Expert psychotherapist offering
+                personalized online and offline therapy for a balanced and resilient life.</i></p>
+            </div>
+        </div>
+    </div>
+    <!-- banner -->
+    <div class="container" style="max-width: 85%;">
+        <div class="">
+            <div style="background: #fff5e9;border-radius: 50px;padding-bottom: 15px;">
+                <div class="row">
+                    <div style="text-align: center;" class="col">
+                        <img class="service_image" src="../assets/img/online/Online_Counselling-removebg-preview.png" alt="" style="margin-top: 50px;">
+                    </div>
+                    <div style="font-size: 1.2rem; padding-top: 5%;" class="col">
+                        <div style="background-color: transparent; border: none;" class="card">
+                            <div class="card-body">
+                                <p style="text-align:justify ;">
+                                    Our online counseling is a form of psychological help for people suffering from mental health problems. Online counseling is a new medical service. It has grown and evolved from simple email-based communications, including chat, call times, and live webcams based on video sessions.
+                                <br>Today, video counseling and telephone counseling are among the most popular forms of counseling. Online counseling applies to one person or a couple or family, in the same way as face-to-face counseling.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="background-color: transparent; height: auto;">
+                        <div class="card-body " id="row" style="display: flex; ">
+                            <div class="card-detail" style="overflow: hidden; padding:15px">
+                                <h4><b> The various forms of online counseling are :</b></h4>
+                                <p>
+                                    Chat room help, Live calling, Email, Message boards, Online chat, Video conference, Messaging.
+                            </div> 
+                            <div style="
+                        height: 100%;
+                        align-items: center;
+                        ">                            
+                        <img src="../assets/img/online/various_forms_of_online_counseling-removebg-preview.png" alt="" style="
+                        width: 320px;
+                        height: 190px;
+                        margin-left: 30px;
+                          ">
+                     </div>
+                        </div>
+                        <br>
+                    </div> 
+                    <br>  
+                    <div>
+                    <h4><b>Maanai Individual Counselling Services</b></h4>
+                    </div>
+                     <div>
+                        <br>
+                        <div class="card" style="background-color: transparent; height: auto;">
+                            <div class="card-body " id="row" style="display: flex; ">
+                                 <div style="
+                                    height: 100%;
+                                    align-items: center;
+                                    ">                            
+                                    <img src="../assets/img/online/How_we_conduct_our_online-removebg-preview.png" alt="" style="
+                                    width: 200px;
+                                    height: 170px;
+                                    margin-top: 40px;
+                                    ">
+                                </div>
+                                <div class="card-detail" style="overflow: hidden; padding:15px">
+                                    <h4><b>How we conduct our online counseling services</b></h4>
+                                    <p>
+                                         Being able to identify your unique strains is a step in the right direction. With online treatment counseling, each person works with a qualified therapist who diagnoses and helps him or her deal with various problems.
+                                        <br><br>During the initial treatment period, the counselor and the individual work together to better understand the fundamental problems. You have to fill a list of questions and participate in a discussion to complete the submission. Today, many online counseling programs work with webcams. It permit for a face-to-face meeting and for nourish the bond between the mentor and the mentor.
+                                </div> 
+                            </div>
+                        </div>   
+                        <br>
+                        <div class="text-center">
+                            <button style="background-color: #e27a11!important;
+                            border-radius: 5px;
+                            font-size: 17px;
+                            font-family: 'Source Sans Pro', sans-serif;
+                            padding: 6px 18px;
+                            color: white;
+                            border: none;">
+                            <!-- Calendly link widget begin -->
+                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                            async></script>
+                            <a style="text-decoration:none; color:white;" href=""
+                            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/uma_phoenix_counselling'});return false;">Book Appointment</a>
+                            <!-- Calendly link widget end -->
+                        </div><br><br>
+                    </div>
+                </div>
+                <h3><b>Benefits of our online counseling <br>Maanai Individual Counselling Services</b></h3>
+                <br>
+            <div class="container-fluid aboutme" style="max-width: 100%; ">
+                <div class="card" style="background-color: transparent; height: auto;">
+                    <div class="card-body" style="display: flex;">
+                        <div class="card-detail" style="overflow: hidden;">
+                            <h4><b>Easy:</b></h4>
+                            <p>
+                                You do not have to visit an office to see a counselor. Counseling can be carried out in the comfort and safety of your own home."
+                            </p>
+                        </div>
+                     <div style="
+                        height: 100%;
+                        align-items: center;
+                        ">                            
+                        <img src="../assets/img/online/Easyto11-removebg-preview.png" alt="" style="
+                        width: 170px;
+                        height: 170px;
+                          ">
+                     </div>
+                </div>
+                </div>
+                <br>
+              <div class="card" style="background-color: transparent; height: auto;">
+                    <div class="card-body " id="row" style="display: flex; ">
+                         <div style="
+                            height: 100%;
+                            align-items: center;
+                            ">                            
+                            <img src="../assets/img/online/Privacy__Security__and_Confidentiality-removebg-preview.png" alt="" style="
+                            width: 190px;
+                            height: 170px;
+                            ">
+                        </div>
+                        <div class="card-detail" style="overflow: hidden; padding:15px">
+                            <h4><b>Maanai Individual Counselling Services <br>
+                                Privacy, Security, and Confidentiality:</b></h4>
+                            <p> Nobody need know you are seeing a counselor as it can be used at your convenience.
+                        </div> 
+                    </div>
+                </div>   
+                <br>
+                <div class="card" style="background-color: transparent; height: auto;">
+                    <div class="card-body" style="display: flex;">
+                        <div class="card-detail" style="overflow: hidden;">
+                            <h4><b>Maanai Individual Counselling Services <br>
+                                Effectiveness:</b></h4>
+                            <p>Major breakthrough studies have proven that online therapy counseling is effective. It helps you find the right counselor who assists you and work with you to resolve your concerns.
+                        </div>
+                     <div style="
+                        height: 100%;
+                        align-items: center;
+                        ">                            
+                        <img src="../assets/img/online/Effectiveness-removebg-preview.png" alt="" style="
+                        width: 190px;
+                        height: 170px;
+                          ">
+                     </div>
+                     <br>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="card" style="background-color: transparent; height: auto;">
+                <div class="card-body " id="row" style="display: flex; ">
+                     <div style="
+                        height: 100%;
+                        align-items: center;
+                        ">                            
+                        <img src="../assets/img/online/Any_Where_Any_Time-removebg-preview.png" alt="" style="
+                        width: 230px;
+                        height: 180px;
+                        margin-top: 25px;
+                        ">
+                    </div>
+                    <div class="card-detail" style="overflow: hidden; padding:15px">
+                        <h4><b>Maanai Individual Counselling Services <br>
+                            Any Where Any Time:</b></h4>
+                        <p>Extensive research has shown that online treatment counseling is effective. It helps you find the right counselor to help you and work with you to solve your concerns.
+                            Besides this, our online One to One Talk Therapy Services allows each person to spend more time building their thoughts and thinking patterns about working with an online therapist in a more structured format. It will enable a person to rearrange or change their times according to preferences easily.
+                    </div> 
+                </div>
+            </div> 
+            <br>
+            <div class="text-center">
+                <button style="background-color: #e27a11!important;
+                border-radius: 5px;
+                font-size: 17px;
+                font-family: 'Source Sans Pro', sans-serif;
+                padding: 6px 18px;
+                color: white;
+                border: none;">
+                <!-- Calendly link widget begin -->
+                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                async></script>
+                <a style="text-decoration:none; color:white;" href=""
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/uma_phoenix_counselling'});return false;">Book Appointment</a>
+                <!-- Calendly link widget end -->
+            </div>
+        </div>
+    </div>
+</button>
+</div>
+</div>
+<!-- service -->
+</div>
+<!-- about -->
+<footer id="footer">
+    <div class="text-center">
+        <img src="../assets/img/logo.png" class="logo" alt=""><br><br>
+        <h2><b><u>Contact Us</u></b></h2>
+        <h5>Panvel,Navi mumbai, Maharashtra, India.</h5>
+        <p> 
+            <a style="text-decoration: none; font-weight: 500;color: black;" href="tel:+91 9643448705"><i style="color: #e27a11;" class="bi bi-telephone-fill"></i>+91 9643448705</a>  
+            <a style="text-decoration: none; font-weight: 500;color: black;" href="tel:+91 9867605239"><i style="color: #e27a11;" class="bi bi-telephone-fill"></i>+91 9867605239</a> 
+            <a style="text-decoration: none; font-weight: 500;color: black;" href="mailto:phoenixforcounselling@gmail.com"><i style="color: #e27a11;" class="bi bi-envelope-fill"></i>phoenixforcounselling@gmail.com</a>
+        </p>
+    </div>
+    <img src="../assets/img/footer.png" alt="footerImg" style="width: 100%;">
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,308 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    scroll-behavior: smooth;
+    /* font-family: monospace; */
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+  margin: 0 !important;
+  background-color: rgb(255, 245, 233) !important;
+}
+
+.customContainer {
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+}
+
+.navMainContainer {
+    max-width: 80%;
+}
+
+.logo {
+    width: 12rem;
+    height: auto;
+}
+
+/* color */
+.main-bg-color {
+    --bs-bg-opacity: 1;
+    /* background-color: rgb(255, 245, 233) !important; */
+    background-color: rgb(255, 245, 233) !important;
+}
+
+/* button */
+.customButton {
+    background-color: rgb(44, 112, 44);
+    padding: 15px 70px 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 50px;
+    font-size: 22px;
+    color: white;
+}
+.img-fluid {
+  padding: 0% 20% 0% 20%;
+  max-width: 100%;
+  height: auto;
+}
+.customCard {
+    --bs-bg-opacity: 1;
+    background-color: antiquewhite !important;
+    border-radius: 40px !important;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.header {
+    position: relative;
+    padding: 100px;
+    padding-bottom: 10px;
+    background-image: url(img/leftDiv.png), url(img/rightDiv.png);
+    background-position: 0px 0px, 100% 100%;
+    background-size: auto, auto;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.burgerCol {
+    text-align: right;
+    padding-top: 3%;
+}
+
+/* text */
+.heading-test {
+    font-size: 3.5rem;
+}
+
+.para-text {
+    font-size: 22px;
+}
+/* workflow */
+.stepper-wrapper {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  
+  .stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: -50%;
+    z-index: 2;
+  }
+  
+  .stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  .stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 6px;
+  }
+  
+  .stepper-item.active {
+    font-weight: bold;
+  }
+  
+  .stepper-item.completed .step-counter {
+    background-color: #4bb543;
+  }
+  
+  .stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #4bb543;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+  }
+  
+  .stepper-item:first-child::before {
+    content: none;
+  }
+  .stepper-item:last-child::after {
+    content: none;
+  }
+  /* workflow */
+.aboutme{
+  background-image: url(img/footerBg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding-top: 30%; */
+}
+.aboutcard{
+  border:none !important; 
+  background-color: transparent !important; 
+  padding-top: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+.landingImageDesktop{
+  width: 41%;
+}
+.youngPeople{
+  max-width: 80% !important;
+}
+.youngPeopleImg{
+  margin-left: 100px;
+}
+div.banner{
+  background-image: url(img/bannerbg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+i.bi.count{
+  font-size: 3rem;
+  color: #e27a11;
+}
+.adolescenceCounsellingBanner{
+  width: 30rem;
+}
+.howWeWorkBase{
+  max-width: 80%;
+}
+
+  /* footer */
+  footer#footer{
+    background-image: url(img/footerBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* footer */
+/* mobile view */
+
+/* Styles for mobile devices (up to 767px) */
+@media (max-width: 767px) {
+    .logo {
+        width: 10rem;
+        height: auto;
+    }
+
+    .navItems {
+        display: none !important;
+    }
+
+    .navMainContainer {
+        max-width: 95%;
+        margin: 0;
+    }
+
+    .navSubContainer {
+        margin-left: 0px !important;
+        margin-right: 9% !important;
+    }
+    .burgerCol {
+        padding-top: 10%;
+    }
+
+    .header{
+      padding: 0px;
+    }
+    .landingImageDesktop{
+      display: none;
+    }
+    .youngPeople{
+      max-width: 100% !important;
+    }
+    .youngPeople .col-6{
+      width: 1000% !important;
+    }
+    .youngPeopleImg{
+      margin-left: 15px;
+      margin-left: 100px;
+      margin-bottom: -20px;
+      margin-top: 20px;
+    }
+    .heading-test{
+      font-size: 21px;
+    }
+    .para-text {
+      font-size: 16px;
+  }
+  .adolescenceCounsellingBanner{
+    width: 19rem;
+  }
+  .service_image{
+    width: 20rem;
+  }
+  .img-fluid{
+    padding: 0%;
+  }
+  .step-name{
+    font-size: 10px;
+  }
+  .howWeWorkBase{
+    max-width: 100%;
+  }
+}
+
+/* Styles for tablets (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navItems {
+        display: none !important;
+    }
+    .landingImageDesktop{
+      display: none;
+    }
+}
+
+/* Styles for small laptops and desktops (1024px to 1279px) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .navItems {
+        display: none !important;
+    }
+    .landingImageMobile{
+      display: none;
+    }
+
+}
+
+/* Styles for medium to large laptops and desktops (1280px and above) */
+@media (min-width: 1280px) {
+  .landingImageMobile{
+    display: none;
+  }
+}
