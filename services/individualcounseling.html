@@ -16,465 +16,320 @@
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <!-- bootstrap icons -->
-    <style>
-        @media only screen and (max-width: 500px) {
-            .card-body {
-                flex-direction: column-reverse;
-            }
-
-            #row {
-                flex-direction: column;
-            }
-
-            .card-detail h4,
-            p {
-                text-align: center;
-            }
-
-            .card-body div img {
-                align-items: center;
-                margin-left: 25%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <!-- navigation -->
-    <nav class="navbar main-bg-color">
-        <div class="container navMainContainer">
-            <div class="container-fluid navSubContainer">
-                <div class="row align-items-start">
-                    <div class="col-2">
-                        <a class="navbar-brand" href="../index.html" style="padding-right: 5%;">
-                            <img src="../assets/img/logo.png" class=" logo" alt="logo">
-                        </a>
-                    </div>
-                    <div class="col-9" style="padding-top: 3%;">
-                        <div class="row navItems">
-                            <div class="col">
-                                <ul style="list-style: none;">
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="./uc.html" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            <b>Our service's</b>
-                                        </a>
-                                        <ul class="dropdown-menu" style="background-color: #bbd5b9;">
-                                            <li><a class="dropdown-item active"
-                                                    href="../services/individualcounseling.html"><b>1. </b>Individual
-                                                    counseling</a></li>
-                                            <li><a class="dropdown-item" href="../services/couplecounseling.html"><b>2.
-                                                    </b>Couple counseling</a></li>
-                                            <li><a class="dropdown-item" href="../services/familytherapy.html"><b>3.
-                                                    </b>Family therapy</a></li>
-                                            <li><a class="dropdown-item"
-                                                    href="../services/adolescentcounseling.html"><b>4. </b>Adolescent
-                                                    counseling</a></li>
-                                            <li><a class="dropdown-item" href="../services/grouptherapy.html"><b>5.
-                                                    </b>Group therapy</a></li>
-                                            <li><a class="dropdown-item" href="../services/hypnotherapy.html"><b>6.
-                                                    </b>Hypnotherapy</a></li>
-                                            <li><a class="dropdown-item" href="../services/epa.html"><b>7. </b>Corporate
-                                                    wellness program (EAP)</a></li>
-                                            <li><a class="dropdown-item"
-                                                    href="../services/trainingsandworkshops.html"><b>8. </b>Training and
-                                                    workshops</a></li>
-                                            <li><a class="dropdown-item"
-                                                    href="../services/mentalhealthadvocacy.html"><b>9. </b>Mental health
-                                                    advocacy</a></li>
-                                            <li><a class="dropdown-item" href="../services/onlinecounseling.html"><b>10.
-                                                    </b>Online counseling</a></li>
-                                            <!-- <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="./uc.html">Something else here</a></li> -->
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col" style="text-align: right;">
-                                <button style="background-color: #e27a11!important;
-                            border-radius: 5px;
-                            font-size: 17px;
-                            font-family: 'Source Sans Pro', sans-serif;
-                            padding: 6px 18px;
-                            color: white;
-                            border: none;">
-                                    <!-- Calendly link widget begin -->
-                                    <link href="https://assets.calendly.com/assets/external/widget.css"
-                                        rel="stylesheet">
-                                    <script src="https://assets.calendly.com/assets/external/widget.js"
-                                        type="text/javascript" async></script>
-                                    <a style="text-decoration:none; color:white;" href=""
-                                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/uma_phoenix_counselling'});return false;">Book
-                                        Appointment</a>
-                                    <!-- Calendly link widget end -->
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-1 burgerCol">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- sideBar -->
-        <div class="offcanvas offcanvas-end main-bg-color" tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel" style="border-radius: 20px;padding: 35px;">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                    <img src="../assets/img/logo.png" alt="logo" style="width: 8rem;">
-                </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../index.html"><b>Home</b></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../about.html"><b>About Us</b></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="./uc.html" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <b>Our service's</b>
-                        </a>
-                        <ul class="dropdown-menu" style="background-color: #bbd5b9;">
-                            <li><a class="dropdown-item active" href="../services/individualcounseling.html"><b>1.
-                                    </b>Individual counseling</a></li>
-                            <li><a class="dropdown-item" href="../services/couplecounseling.html"><b>2. </b>Couple
-                                    counseling</a></li>
-                            <li><a class="dropdown-item" href="../services/familytherapy.html"><b>3. </b>Family
-                                    therapy</a></li>
-                            <li><a class="dropdown-item" href="../services/adolescentcounseling.html"><b>4.
-                                    </b>Adolescent counseling</a></li>
-                            <li><a class="dropdown-item" href="../services/grouptherapy.html"><b>5. </b>Group
-                                    therapy</a></li>
-                            <li><a class="dropdown-item" href="../services/hypnotherapy.html"><b>6. </b>Hypnotherapy</a>
-                            </li>
-                            <li><a class="dropdown-item" href="../services/epa.html"><b>7. </b>Corporate wellness
-                                    program (EAP)</a></li>
-                            <li><a class="dropdown-item" href="../services/trainingsandworkshops.html"><b>8.
-                                    </b>Training and workshops</a></li>
-                            <li><a class="dropdown-item" href="../services/mentalhealthadvocacy.html"><b>9. </b>Mental
-                                    health advocacy</a></li>
-                            <li><a class="dropdown-item" href="../services/onlinecounseling.html"><b>10. </b>Online
-                                    Counseling</a></li>
-                            <!-- <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="./uc.html">Something else here</a></li> -->
-                        </ul>
-                    </li>
-                    <li><a class="nav-link" href="https://blog.phoenixcounselling.in/"><b>Blog</b></a></li>
+      <!-- navigation -->
+  <nav class="navbar main-bg-color">
+    <div class="container navMainContainer">
+      <div class="container-fluid navSubContainer">
+        <div class="row align-items-start">
+          <div class="col-2">
+            <a class="navbar-brand" href="../index.html" style="padding-right: 5%;">
+              <img src="../assets/img/logo.png" class="logo" alt="logo">
+            </a>
+            <button style="font-size: 11px;
+            width: 11rem;
+            
+            border: none;
+            background-color: #bbd5b9;"><b>MSME=UDYAM-MH-27-0041103</b></button>
+          </div>
+          <div class="col-9" style="padding-top: 3%;">
+            <div class="row navItems">
+              <div class="col">
+                <ul style="list-style: none;">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../index.html" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <b>Our service's</b>
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: #bbd5b9;">
+                      <li><a class="dropdown-item" href="../services/individualcounseling.html"><b>1. </b>Individual
+                          counseling</a></li>
+                      <li><a class="dropdown-item" href="../services/couplecounseling.html"><b>2. </b>Couple
+                          counseling</a></li>
+                      <li><a class="dropdown-item" href="../services/familytherapy.html"><b>3. </b>Family therapy</a>
+                      </li>
+                      <li><a class="dropdown-item" href="../services/adolescentcounseling.html"><b>4. </b>Adolescent
+                          counseling</a></li>
+                      <li><a class="dropdown-item" href="../services/grouptherapy.html"><b>5. </b>Group therapy</a></li>
+                      <li><a class="dropdown-item" href="../services/hypnotherapy.html"><b>6. </b>Hypnotherapy</a></li>
+                      <li><a class="dropdown-item" href="../services/epa.html"><b>7. </b>Corporate wellness program
+                          (EAP)</a></li>
+                      <li><a class="dropdown-item" href="../services/trainingsandworkshops.html"><b>8. </b>Training and
+                          workshops</a></li>
+                      <li><a class="dropdown-item" href="../services/mentalhealthadvocacy.html"><b>9. </b>Mental health
+                          advocacy</a></li>
+                      <li><a class="dropdown-item" href="../services/onlinecounseling.html"><b>10. </b>Online
+                          counseling</a></li>
+                    </ul>
+                  </li>
                 </ul>
-                <!-- <form class="d-flex mt-3" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-    </form> -->
+              </div>
+              <div class="col" style="text-align: right;">
+                <button style="background-color: #e27a11!important;
+              border-radius: 5px;
+              font-size: 17px;
+              font-family: 'Source Sans Pro', sans-serif;
+              padding: 6px 18px;
+              color: white;
+              border: none;">
+                  <!-- Calendly link widget begin -->
+                  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                    async></script>
+                  <a style="text-decoration:none; color:white;" href=""
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/uma_phoenix_counselling'});return false;">Book
+                    Appointment</a>
+                  <!-- Calendly link widget end -->
+                </button>
+              </div>
             </div>
+          </div>
+          <div class="col-1 burgerCol">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
         </div>
-        <!-- sideBar -->
-    </nav>
+      </div>
+    </div>
+    <!-- sideBar -->
+    <div class="offcanvas offcanvas-end main-bg-color" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel" style="border-radius: 20px;padding: 35px;">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+          <img src="../assets/img/logo.png" alt="logo" style="width: 8rem; height: auto;">
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../index.html"><b>Home</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../about.html"><b>About Us</b></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="../index.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <b>Our service's</b>
+            </a>
+            <ul class="dropdown-menu" style="background-color: #bbd5b9;">
+              <li><a class="dropdown-item" href="../services/individualcounseling.html"><b>1. </b>Individual
+                  counseling</a></li>
+              <li><a class="dropdown-item" href="../services/couplecounseling.html"><b>2. </b>Couple counseling</a></li>
+              <li><a class="dropdown-item" href="../services/familytherapy.html"><b>3. </b>Family therapy</a></li>
+              <li><a class="dropdown-item" href="../services/adolescentcounseling.html"><b>4. </b>Adolescent
+                  counseling</a></li>
+              <li><a class="dropdown-item" href="../services/grouptherapy.html"><b>5. </b>Group therapy</a></li>
+              <li><a class="dropdown-item" href="../services/hypnotherapy.html"><b>6. </b>Hypnotherapy</a></li>
+              <li><a class="dropdown-item" href="../services/epa.html"><b>7. </b>Corporate wellness program (EAP)</a>
+              </li>
+              <li><a class="dropdown-item" href="../services/trainingsandworkshops.html"><b>8. </b>Training and
+                  workshops</a></li>
+              <li><a class="dropdown-item" href="../services/mentalhealthadvocacy.html"><b>9. </b>Mental health
+                  advocacy</a></li>
+              <li><a class="dropdown-item" href="../services/onlinecounseling.html"><b>10. </b>Online counseling</a></li>
+            </ul>
+          <li><a class="nav-link" href="https://blog.phoenixcounselling.in/"><b>Blog</b></a></li>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- sideBar -->
+  </nav>
+  <!-- navigation -->
     <!-- navigation -->
-    <!-- about -->
-    <div class="container-fluid aboutme">
-        <div class="container" style="max-width: 100%; padding: 2%;">
-            <div class="banner">
-                <div style="text-align: center;background: #fbd9ac21;border-radius: 50px;">
-                    <h1>
-                        Individual Counselling Services In Chennai
-                    </h1>
-                    <p><i>Discover healing at Phoenix Psychological Services in Chennai. Expert psychotherapist
-                            offering
-                            personalized online and offline therapy for a balanced and resilient life.</i></p>
+
+    <!-- landing -->
+    <div class="container-fluid " style="padding: 0;">
+        <!-- banner -->
+        <div class="card mb-3 main-bg-color header " style=" border: none; padding-top: 2%; ">
+            <div class="container" style="max-width: 100%; padding: 6%;">
+                <div class="banner">
+                    <div style="text-align: center;background: #fbd9ac21;border-radius: 50px;padding-top: 15px;padding-bottom: 15px;">
+                        <h1>Individual Counselling Services <strong>@Chennai</strong></h1>
+                        <p class="para-text">
+                            Discover healing at Phoenix Psychological Services in Chennai. Expert psychotherapist offering personalized online and offline therapy for a balanced and resilient life.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- banner -->
-        <div class="container" style="max-width: 85%;">
-            <div class="">
-                <div style="background: #fff5e9;border-radius: 50px;padding-bottom: 15px;">
-                    <div class="row">
-                        <div style="text-align: center;" class="col">
-                            <img src="../assets/img/individual.png" alt="">
-                        </div>
-                        <div style="font-size: 1.2rem; padding-top: 5%;" class="col">
-                            <div style="background-color: transparent; border: none;" class="card">
-                                <div class="card-body">
-                                    <p>
-                                        <b>Individual counseling in Chennai</b> offers a valuable opportunity for
-                                        individuals to seek support and personal growth during challenging phases of
-                                        life. This form of counseling focuses on addressing personal concerns with an
-                                        eye toward the future. It encompasses a range of areas, including career
-                                        counseling and planning, navigating grief following the loss of a loved one, and
-                                        effectively managing work-related challenges before they escalate.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <button style="background-color: #e27a11!important;
-                        border-radius: 5px;
-                        font-size: 17px;
-                        font-family: 'Source Sans Pro', sans-serif;
-                        padding: 6px 18px;
-                        color: white;
-                        border: none;">
-                                <!-- Calendly link widget begin -->
-                                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                                <script src="https://assets.calendly.com/assets/external/widget.js"
-                                    type="text/javascript" async></script>
-                                <a style="text-decoration:none; color:white;" href=""
-                                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/uma_phoenix_counselling'});return false;">Book
-                                    Appointment</a>
-                                <!-- Calendly link widget end -->
-                        </div>
 
-                        <div>
-                            <br>
-                            <div class="card" style="background-color: transparent; height: auto;">
-                                <div class="card-body " id="row" style="display: flex;">
-                                    <div style="
-                                    height: 100%;
-                                    align-items: center;
-                                    ">
-                                        <img src="../assets/img/What_Happens_During-removebg-preview.png" alt="" style="
-                                    width: 200px;
-                                    height: 170px;
-                                    margin-left: 0;
-                                    ">
-                                    </div>
-                                    <div class="card-detail" style="overflow: hidden; padding:15px">
-                                        <h4><b>What Happens During One On One Individual Therapy Counseling ?</b></h4>
-                                        <p>
-                                            When opting for a specific consultant in the context of <b>Individual
-                                                Psychotherapy</b> or <b>Individual Counseling</b>, please be aware that
-                                            this selection may extend your initial appointment waiting time. The entire
-                                            process typically takes around 90 minutes, which includes filling out
-                                            electronic forms, the actual treatment session, and scheduling any necessary
-                                            follow-up appointments. To ensure a smooth experience, we recommend arriving
-                                            early to allow ample time for completing the mandatory paperwork. These
-                                            documents include a comprehensive human and clinical history form, a medical
-                                            agreement, a medical consent form, and a notice of privacy practices. Your
-                                            therapist will rely on this information to better understand your current
-                                            concerns, relevant history, and therapeutic goals.
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="text-center">
-                                <button style="background-color: #e27a11!important;
-                            border-radius: 5px;
-                            font-size: 17px;
-                            font-family: 'Source Sans Pro', sans-serif;
-                            padding: 6px 18px;
-                            color: white;
-                            border: none;">
-                                    <!-- Calendly link widget begin -->
-                                    <link href="https://assets.calendly.com/assets/external/widget.css"
-                                        rel="stylesheet">
-                                    <script src="https://assets.calendly.com/assets/external/widget.js"
-                                        type="text/javascript" async></script>
-                                    <a style="text-decoration:none; color:white;" href=""
-                                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/uma_phoenix_counselling'});return false;">Book
-                                        Appointment</a>
-                                    <!-- Calendly link widget end -->
-                            </div><br><br>
-                        </div>
-                    </div>
-                    <h3><b>Benefits of Individual Counselling:</b></h3>
-                    <div class="container-fluid aboutme" style="max-width: 100%; ">
-                        <div class="card" style="background-color: transparent; height: auto;">
-                            <div class="card-body" style="display: flex;">
-                                <div class="card-detail" style="overflow: hidden;">
-                                    <h4><b>Self Awareness:</b></h4>
-                                    <p>
-                                        Self-awareness is understanding your thoughts, emotions, behaviors, strengths,
-                                        and weaknesses. It's vital for personal growth, emotional intelligence, and
-                                        effective relationships, in both personal and professional life.ll rely on this
-                                        information to better understand your current concerns, relevant history, and
-                                        therapeutic goals."
-                                    </p>
-                                </div>
-                                <div style="
-                        height: 100%;
-                        align-items: center;
-                        ">
-                                    <img src="../assets/img/Self-awareness_png-removebg-preview.png" alt="" style="
-                        width: 170px;
-                        height: 170px;
-                          ">
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="card" style="background-color: transparent; height: auto;">
-                            <div class="card-body " id="row" style="display: flex; ">
-                                <div style="
-                            height: 100%;
-                            align-items: center;
-                            ">
-                                    <img src="../assets/img/Self-exploration-removebg-preview.png" alt="" style="
-                            width: 170px;
-                            height: 170px;
-                            margin-left: 0;
-                            ">
-                                </div>
-                                <div class="card-detail" style="overflow: hidden; padding:15px">
-                                    <h4><b>Self-exploration:</b></h4>
-                                    <p>
-                                        Self-exploration in individual counseling involves deep introspection to
-                                        understand one's emotions, thoughts, and experiences. It's a crucial process for
-                                        personal growth, self-awareness, and addressing issues within a therapeutic
-                                        setting.
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="card" style="background-color: transparent; height: auto;">
-                            <div class="card-body" style="display: flex;">
-                                <div class="card-detail" style="overflow: hidden;">
-                                    <h4><b>Reliable Communication:</b></h4>
-                                    <p>
-                                        Reliable communication in individual counseling is vital. It fosters trust,
-                                        enables open dialogue, and helps the counselor understand the client's needs,
-                                        leading to effective support and personal growth.
-                                </div>
-                                <div style="
-                        height: 100%;
-                        align-items: center;
-                        ">
-                                    <img src="../assets/img/Reliable_communication-removebg-preview.png" alt="" style="
-                        width: 170px;
-                        height: 170px;
-                        margin-left: 0;
-                          ">
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-                    <br>
-                    <div class="text-center">
-                        <button style="background-color: #e27a11!important;
-                border-radius: 5px;
-                font-size: 17px;
-                font-family: 'Source Sans Pro', sans-serif;
-                padding: 6px 18px;
-                color: white;
-                border: none;">
-                            <!-- Calendly link widget begin -->
-                            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
-                                async></script>
-                            <a style="text-decoration:none; color:white;" href=""
-                                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/uma_phoenix_counselling'});return false;">Book
-                                Appointment</a>
-                            <!-- Calendly link widget end -->
-                    </div>
-                </div>
+        <!-- landing-body -->
+        <div class="row g-0 customContainer">
+            <div class="col-md-5 landingImageMobile">
+                <img src="../assets/img/individual.png" class="img-fluid rounded-start" alt="header">
             </div>
-            </button>
+            <div class="col-md-7">
+                <h1 class="card-title" style="font-size: 2.5rem;">Individual ounseling</h1>
+            <p class="card-text para-text"><strong>@Chennai</strong></p>
+            <p class="para-text">In an Individual Counseling session, we <strong>listen completely</strong> and provide a safe, confidential space for clients to vent out , and explore their thoughts, feelings, and behaviors without any judgement. The process begins with an initial assessment to understand the client's background and goals. Building a trusting therapeutic relationship is crucial, allowing for open communication and empathy . Then we help our clients to understand their core issues, identify specific patterns, intense negative emotions, and help them to develop coping strategies accordingly. <strong>Cognitive restructuring</strong> is one technique used to change negative thought patterns, while emotional processing aids in expressing and understanding emotions. We use an <strong>eclectic approach</strong> to help the clients based on their needs and issues. Homework assignments and regular progress reviews are done to ensure the application of their learned skills. The therapy concludes with preparation for termination(end of therapy) and potential follow-up sessions, all while maintaining strict <strong>confidentiality</strong> and <strong>ethical practice</strong>.</p>
+            </div>
+            <div class="col-md-5 landingImageDesktop">
+                <img src="../assets/img/individual.png" class="img-fluid rounded-start" alt="header">
+            </div>
+        </div>
+        <!-- landing-body -->
+    </div>
+    <!-- landing -->
+
+    <!-- What Happens -->
+    <div class="container" style="max-width: 90%; padding: 1%;">
+               <h4><strong style="color: black;">What Happens During One On One Individual Therapy Counseling? 🤔</strong></h4>
+            <p class="para-text">
+                When opting for a specific consultant in the context of Individual Psychotherapy or Individual Counseling, please be aware that this selection may extend your initial appointment waiting time. The entire process typically takes around 90 minutes, which includes filling out electronic forms, the actual treatment session, and scheduling any necessary follow-up appointments. <br>
+                To ensure a smooth experience, we recommend arriving early to allow ample time for completing the mandatory paperwork. These documents include a comprehensive human and clinical history form, a medical agreement, a medical consent form, and a notice of privacy practices. Your therapist will rely on this information to better understand your current concerns, relevant history, and therapeutic goals.
+            </p>
+    </div>
+    <!-- What Happens -->
+
+    <!-- Benefits -->
+    <div class="container" style="max-width: 90%; padding: 1%;">
+        <h4>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+                <path fill="#c8e6c9" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path><path fill="#4caf50" d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z"></path>
+            </svg> 
+            <strong style="color: black;">Benefits of Individual Counselling:</strong></h4>
+        <div style="padding: 1%;">
+            
+            <h4>Self-Awareness: 🧠</h4>
+            <p class="para-text">Self-exploration in Individual Counseling involves deep introspection to understand one's emotions, thoughts, and experiences. It's a crucial process for personal growth, self-awareness, and addressing issues within a therapeutic setting. </p>
+  
+            <h4>Self-Exploration: 🔍</h4>
+            <p class="para-text">Self-awareness is understanding your thoughts, emotions, behaviors, strengths, and weaknesses. It's vital for personal growth, emotional intelligence, and effective relationships, in both personal and professional life.ll rely on this information to better understand your current concerns, relevant history, and therapeutic goals.</p>
+       
+            <h4>Reliable Communication: 💬</h4>
+            <p class="para-text">Reliable communication in Individual Counseling is vital. It fosters trust, enables open dialogue, and helps the counselor understand the client's needs, leading to effective support and personal growth.</p>
         </div>
     </div>
-    <!-- banner -->
-    <!-- service -->
-    <div class="container text-center mt-5">
+    <!-- Benefits -->
+
+    <!-- Book Appointment -->
+    <div class="container" style="text-align: center; padding: 1%">
+        <button style="
+        background-color: #e27a11 !important;
+        border-radius: 5px;
+        font-size: 17px;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 6px 18px;
+        color: white;
+        border: none;"> <!-- Added cursor style -->
+            <!-- Calendly link widget begin -->
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async=""></script>
+            <a style="text-decoration:none; color:white;" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/uma_phoenix_counselling'});return false;">Book Appointment</a>
+            <!-- Calendly link widget end -->
+        </button>
+    </div>
+    <!-- Book Appointment -->
+    <!-- Frequently Asked Questions  -->
+    <div class="container" style="max-width: 80%;">
         <h1 style="text-align: center;"><b>Frequently Asked Questions</b></h1>
-        <div class="t1">
-            <p class="d-inline-flex gap-1">
-                <button style="border: 2px solid #bbd5b9; border-radius: 15px;" class="btn mt-2" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#t1" aria-expanded="false" aria-controls="t1">
-                    <b style="color: #e27a11;"><i class="bi bi-box-arrow-down"></i></b> What Happens During One On One
-                    Individual Therapy Counseling In Chennai?
-                </button>
-            </p>
-            <div class="collapse" id="t1">
-                <div style="background-color: #c2d9c1; border: 2px dotted green;" class="card card-body">
-                    If you have selection for a specific consultant, this may escalate the time you have to wait for
-                    your first appointment. The total time required is approximately 90 minutes, including completing
-                    computer forms, treatment time, and arranging follow-up appointments, so be sure how to keep this in
-                    mind when planning your work.
-                    It would be great if you come early to allow enough time to complete the required forms. Documents
-                    cover a human and clinical history form, a medical agreement, a medical permit, and a notification
-                    of privacy practices. Your doctor will find information about your current concerns, relevant
-                    history, and goals.
+        <div class="text-center mt-5">
+            <div class="t1">
+                <p class="d-inline-flex gap-1">
+                    <button style="border: 2px solid #bbd5b9; border-radius: 15px;" class="btn mt-2" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#t1" aria-expanded="false" aria-controls="t1">
+                        <b style="color: #e27a11;"><i class="bi bi-box-arrow-down"></i></b> What Happens During One On One
+                        Individual Therapy Counseling In Chennai?
+                    </button>
+                </p>
+                <div class="collapse" id="t1">
+                    <div style="background-color: #c2d9c1; border: 2px dotted green;" class="card card-body">
+                        If you have selection for a specific consultant, this may escalate the time you have to wait for
+                        your first appointment. The total time required is approximately 90 minutes, including completing
+                        computer forms, treatment time, and arranging follow-up appointments, so be sure how to keep this in
+                        mind when planning your work.
+                        It would be great if you come early to allow enough time to complete the required forms. Documents
+                        cover a human and clinical history form, a medical agreement, a medical permit, and a notification
+                        of privacy practices. Your doctor will find information about your current concerns, relevant
+                        history, and goals.
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="t2">
-            <p class="d-inline-flex gap-1">
-                <button style="border: 2px solid #bbd5b9; border-radius: 15px;" class="btn mt-2" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#t2" aria-expanded="false" aria-controls="t2">
-                    <b style="color: #e27a11;"><i class="bi bi-box-arrow-down"></i></b>What Happens During One-Time
-                    Individual Therapy In Chennai?
-                </button>
-            </p>
-            <div class="collapse" id="t2">
-                <div style="background-color: #c2d9c1; border: 2px dotted green;" class="card card-body">
-                    It would be best if you arrived early to allow enough time to complete the required forms. Documents
-                    include a human and clinical history form, a medical agreement, a medical permit, and a notification
-                    of privacy practices. Your doctor will find information about your current concerns, relevant
-                    history, and goals.
+            <div class="t2">
+                <p class="d-inline-flex gap-1">
+                    <button style="border: 2px solid #bbd5b9; border-radius: 15px;" class="btn mt-2" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#t2" aria-expanded="false" aria-controls="t2">
+                        <b style="color: #e27a11;"><i class="bi bi-box-arrow-down"></i></b>What Happens During One-Time
+                        Individual Therapy In Chennai?
+                    </button>
+                </p>
+                <div class="collapse" id="t2">
+                    <div style="background-color: #c2d9c1; border: 2px dotted green;" class="card card-body">
+                        It would be best if you arrived early to allow enough time to complete the required forms. Documents
+                        include a human and clinical history form, a medical agreement, a medical permit, and a notification
+                        of privacy practices. Your doctor will find information about your current concerns, relevant
+                        history, and goals.
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="t3">
-            <p class="d-inline-flex gap-1">
-                <button style="border: 2px solid #bbd5b9; border-radius: 15px;" class="btn mt-2" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#t3" aria-expanded="false" aria-controls="t3">
-                    <b style="color: #e27a11;"><i class="bi bi-box-arrow-down"></i></b>What happens in the future when
-                    you participate in Individual Counseling services?
-                </button>
-            </p>
-            <div class="collapse" id="t3">
-                <div style="background-color: #c2d9c1; border: 2px dotted green;" class="card card-body">
-                    At subsequent, you will meet with your advisor for approximately 45 minutes, scheduled according to
-                    the accept schedule. If you would like additional advice than what we can offer you, we will work
-                    with you to find a doctor in the local community.
-                    At first, you will work with your doctor to set goals for your counseling sessions. Open guidance to
-                    your counseling experience will hang on the problems you bring to counseling, your doctor's
-                    perspective, and the goals you set for your work together.
+            <div class="t3">
+                <p class="d-inline-flex gap-1">
+                    <button style="border: 2px solid #bbd5b9; border-radius: 15px;" class="btn mt-2" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#t3" aria-expanded="false" aria-controls="t3">
+                        <b style="color: #e27a11;"><i class="bi bi-box-arrow-down"></i></b>What happens in the future when
+                        you participate in Individual Counseling services?
+                    </button>
+                </p>
+                <div class="collapse" id="t3">
+                    <div style="background-color: #c2d9c1; border: 2px dotted green;" class="card card-body">
+                        At subsequent, you will meet with your advisor for approximately 45 minutes, scheduled according to
+                        the accept schedule. If you would like additional advice than what we can offer you, we will work
+                        with you to find a doctor in the local community.
+                        At first, you will work with your doctor to set goals for your counseling sessions. Open guidance to
+                        your counseling experience will hang on the problems you bring to counseling, your doctor's
+                        perspective, and the goals you set for your work together.
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Frequently Asked Questions -->
 
-    <!-- service -->
-    </div>
-    <!-- about -->
+     <!-- whats app -->
+    <a href="https://wa.me/+919643448705" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+     <!-- whats app -->
+
+    <!-- footer -->
     <footer id="footer">
         <div class="text-center">
-            <img src="../assets/img/logo.png" class="logo" alt=""><br><br>
-            <h2><b><u>Contact Us</u></b></h2>
-            <h6>Square Spaces- Business centre,<br>
-                Paneer Nagar, Mogappair East, Chennai,<br> Tamil Nadu-
-                600037.</h6>
-            <p>
-                <a style="text-decoration: none; font-weight: 500;color: black;" href="tel:+91 9643448705"><i
-                        style="color: #e27a11;" class="bi bi-telephone-fill"></i>+91 9643448705</a>
-                <a style="text-decoration: none; font-weight: 500;color: black;" href="tel:+91 9867605239"><i
-                        style="color: #e27a11;" class="bi bi-telephone-fill"></i>+91 9867605239</a>
-                <a style="text-decoration: none; font-weight: 500;color: black;"
-                    href="mailto:phoenixforcounselling@gmail.com"><i style="color: #e27a11;"
-                        class="bi bi-envelope-fill"></i>phoenixforcounselling@gmail.com</a>
-            </p>
+          <img src="../assets/img/logo.png" class="logo" alt="logo"><br><br>
+          <h2><b><u>Contact Us</u></b></h2>
+          <p>
+            <a style="text-decoration: none; font-weight: 500;color: black;" href="tel:+91 9643448705"><i
+                style="color: #e27a11;" class="bi bi-telephone-fill"></i>+91 9643448705</a>
+            <a style="text-decoration: none; font-weight: 500;color: black;" href="tel:+91 9867605239"><i
+                style="color: #e27a11;" class="bi bi-telephone-fill"></i>+91 9867605239</a>
+            <a style="text-decoration: none; font-weight: 500;color: black;"
+              href="mailto:phoenixforcounselling@gmail.com"><i style="color: #e27a11;"
+                class="bi bi-envelope-fill"></i>phoenixforcounselling@gmail.com</a>
+          </p>
+          <h6>Square Spaces- Business centre,<br>
+            Paneer Nagar, Mogappair East, Chennai,<br> Tamil Nadu-
+            600037.</h6>
+          <a href="https://www.facebook.com/Mrs-Uma-Maheswari-Psychological-Counselor-and-Therapist-112902650512713/"><i
+              style="color: #e27a11; font-size: 30px;" class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/phoenix_psychological_therapy/"><i style="color: #e27a11; font-size: 30px;"
+              class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/uma-maheswari-71356b52/"><i style="color: #e27a11; font-size: 30px;"
+              class="bi bi-linkedin"></i></a>
         </div>
-        <img src="../assets/img/footer.png" alt="footerImg" style="width: 100%;">
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
+        <img src="../assets/img/footer.png" alt="footerImg" style="width: 100%; height: auto;">
+      </footer>
+    <!-- footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/htmx.org"></script>
 </body>
 
 </html>
