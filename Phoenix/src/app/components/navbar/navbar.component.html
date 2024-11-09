@@ -28,10 +28,10 @@
                                         <li><a class="dropdown-item" href="./services/couplecounseling"><b>2.
                                                 </b>Couple
                                                 counseling</a></li>
-                                        <li><a class="dropdown-item" href="./services/familytherapy.html"><b>3.
+                                        <li><a class="dropdown-item" href="./services/familytherapy"><b>3.
                                                 </b>Family therapy</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="./services/adolescentcounseling.html"><b>4.
+                                        <li><a class="dropdown-item" href="./services/adolescentcounseling"><b>4.
                                                 </b>Adolescent
                                                 counseling</a></li>
                                         <li><a class="dropdown-item" href="./services/grouptherapy.html"><b>5. </b>Group
@@ -54,6 +54,7 @@
                                 </li>
                             </ul>
                         </div>
+                        <!-- Calendly -->
                         <div class="col" style="text-align: right;">
                             <button style="background-color: #e27a11!important;
               border-radius: 5px;
@@ -62,15 +63,11 @@
               padding: 6px 18px;
               color: white;
               border: none;">
-                                <!-- Calendly link widget begin -->
-                                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                                <script src="https://assets.calendly.com/assets/external/widget.js"
-                                    type="text/javascript" async></script>
-                                <a style="text-decoration:none; color:white;" href=""
-                                    onclick='Calendly.initPopupWidget({url: "https://calendly.com/uma_phoenix_counselling"});return false;'>Book
-                                    Appointment</a>
-                                <!-- Calendly link widget end -->
+                                <a style="text-decoration: none; color: white; cursor: pointer;" (click)="openPopup()">
+                                    Book Appointment
+                                </a>
                             </button>
+                            <!-- Calendly -->
                         </div>
                     </div>
                 </div>
@@ -111,9 +108,9 @@
                                 counseling</a></li>
                         <li><a class="dropdown-item" href="./services/couplecounseling"><b>2. </b>Couple
                                 counseling</a></li>
-                        <li><a class="dropdown-item" href="./services/familytherapy.html"><b>3. </b>Family therapy</a>
+                        <li><a class="dropdown-item" href="./services/familytherapy"><b>3. </b>Family therapy</a>
                         </li>
-                        <li><a class="dropdown-item" href="./services/adolescentcounseling.html"><b>4. </b>Adolescent
+                        <li><a class="dropdown-item" href="./services/adolescentcounseling"><b>4. </b>Adolescent
                                 counseling</a></li>
                         <li><a class="dropdown-item" href="./services/grouptherapy.html"><b>5. </b>Group therapy</a>
                         </li>

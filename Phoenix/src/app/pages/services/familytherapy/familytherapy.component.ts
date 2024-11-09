@@ -1,16 +1,14 @@
 import { Component } from '@angular/core';
-
 import { BannerComponent } from "../../../components/banner/banner.component";
 import { CalendlyService } from '../../../services/calendly/calendly.service';
 @Component({
-  selector: 'app-coupleconselling',
+  selector: 'app-familytherapy',
   standalone: true,
   imports: [BannerComponent],
-  templateUrl: './coupleconselling.component.html',
-  styleUrl: './coupleconselling.component.css'
+  templateUrl: './familytherapy.component.html',
+  styleUrl: './familytherapy.component.css'
 })
-export class CoupleconsellingComponent {
-
+export class FamilytherapyComponent {
   constructor(private calendlyService: CalendlyService) { }
 
   openPopup() {

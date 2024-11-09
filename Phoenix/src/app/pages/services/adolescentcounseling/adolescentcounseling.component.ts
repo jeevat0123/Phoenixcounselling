@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-
 import { BannerComponent } from "../../../components/banner/banner.component";
 import { CalendlyService } from '../../../services/calendly/calendly.service';
 @Component({
-  selector: 'app-coupleconselling',
+  selector: 'app-adolescentcounseling',
   standalone: true,
   imports: [BannerComponent],
-  templateUrl: './coupleconselling.component.html',
-  styleUrl: './coupleconselling.component.css'
+  templateUrl: './adolescentcounseling.component.html',
+  styleUrl: './adolescentcounseling.component.css'
 })
-export class CoupleconsellingComponent {
+export class AdolescentcounselingComponent {
 
   constructor(private calendlyService: CalendlyService) { }
 

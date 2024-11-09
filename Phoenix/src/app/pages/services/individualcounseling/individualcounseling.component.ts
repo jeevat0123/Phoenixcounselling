@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BannerComponent } from "../../../components/banner/banner.component";
+import { CalendlyService } from '../../../services/calendly/calendly.service';
 
 @Component({
   selector: 'app-individualcounseling',
@@ -10,4 +11,9 @@ import { BannerComponent } from "../../../components/banner/banner.component";
 })
 export class IndividualcounselingComponent {
 
+  constructor(private calendlyService: CalendlyService) { }
+
+  openPopup() {
+    this.calendlyService.openCalendlyPopup();
+  }
 }
