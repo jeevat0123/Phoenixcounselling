@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap'); */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 
 
@@ -6,6 +6,11 @@ body {
     background: #EEEEF4;
     color: #999;
     font-family: Roboto;
+}
+
+.btn,
+.btn * {
+    font-family: 'Roboto', sans-serif !important;
 }
 
 h1 {
@@ -23,6 +28,7 @@ h6 {
 p {
     color: black;
 }
+
 
 .warning-content {
     position: absolute;

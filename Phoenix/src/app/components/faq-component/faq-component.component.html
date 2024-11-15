@@ -1,0 +1,26 @@
+<!-- Frequently Asked Questions  -->
+<div class="container" style="max-width: 80%;">
+    <h1 style="text-align: center;"><b>Frequently Asked Questions</b></h1>
+    <div class="text-center mt-5">
+        @for (item of faqs; track item.question; let idx = $index, e = $even) {
+        <div class="faq-item">
+            <p class="d-inline-flex gap-1">
+                <button style="border: 2px solid #bbd5b9; border-radius: 15px;" class="btn mt-2" type="button"
+                    [attr.data-bs-target]="'#collapse' + idx" data-bs-toggle="collapse"
+                    [attr.aria-controls]="'collapse' + idx" aria-expanded="false">
+                    <b style="color: #e27a11;">
+                        <i class="bi bi-box-arrow-down"></i>
+                    </b>
+                    {{ item.question }}
+                </button>
+            </p>
+            <div class="collapse" [id]="'collapse' + idx">
+                <div style="background-color: #c2d9c1; border: 2px dotted green;" class="card card-body">
+                    <p>{{ item.answer }}</p>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
+<!-- Frequently Asked Questions  -->

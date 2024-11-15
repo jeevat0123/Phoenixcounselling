@@ -1,0 +1,92 @@
+<!-- banner -->
+<app-banner title={{bannerTittle}} subtitle={{bannerContent}}>
+</app-banner>
+<!-- banner -->
+
+<!-- landing-body -->
+<div class="row g-0 customContainer">
+    <div class="col-md-5 landingImageMobile">
+        <img [src]="imagePath" class="img-fluid rounded-start" alt="header">
+    </div>
+    <div class="col-md-7">
+        <h1 class="card-title" style="font-size: 2.5rem;">{{bannerTittle}}</h1>
+        <p class="card-text para-text"><strong>&#64;Chennai</strong></p>
+        <p class="para-text">{{serviceContent}}</p>
+    </div>
+    <div class="col-md-5 landingImageDesktop">
+        <img [src]="imagePath" class="img-fluid rounded-start" alt="header">
+    </div>
+</div>
+<!-- landing-body -->
+
+<!-- What Happens -->
+<div class="container" style="max-width: 90%; padding: 1%;">
+    <h4><strong style="color: black;">🤔 What happens in {{bannerTittle}}? </strong></h4>
+    <p class="para-text">
+        {{whatHappensContent}}
+    </p>
+</div>
+<!-- What Happens -->
+
+<!-- Benefits -->
+<div class="container" style="max-width: 90%; padding: 1%;">
+    <h4>
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
+            <path fill="#c8e6c9" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24S12.955,4,24,4S44,12.955,44,24z"></path>
+            <path fill="#4caf50"
+                d="M34.586,14.586l-13.57,13.586l-5.602-5.586l-2.828,2.828l8.434,8.414l16.395-16.414L34.586,14.586z">
+            </path>
+        </svg>
+        <strong style="color: black;">Benefits of {{bannerTittle}}:</strong>
+    </h4>
+    <div style="padding: 1%;">
+        <div [innerHTML]="benefitsHtml"></div>
+    </div>
+</div>
+<!-- Benefits -->
+
+<!-- Book Appointment -->
+<div class="container" style="text-align: center; padding: 1%">
+    <button style="
+        background-color: #e27a11 !important;
+        border-radius: 5px;
+        font-size: 17px;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding: 6px 18px;
+        color: white;
+        border: none;"> <!-- Added cursor style -->
+        <!-- Calendly link widget begin -->
+        <a style="text-decoration: none; color: white; cursor: pointer;" (click)="openPopup()">
+            Book Appointment
+        </a>
+        <!-- Calendly link widget end -->
+    </button>
+</div>
+<!-- Book Appointment -->
+
+<!-- Frequently Asked Questions  -->
+<div class="container" style="max-width: 80%;">
+    <h1 style="text-align: center;"><b>Frequently Asked Questions</b></h1>
+    <div class="text-center mt-5">
+        @for (item of faqs; track item.question; let idx = $index, e = $even) {
+        <div class="faq-item">
+            <p class="d-inline-flex gap-1">
+                <button style="border: 2px solid #bbd5b9; border-radius: 15px;" class="btn mt-2" type="button"
+                    [attr.data-bs-target]="'#collapse' + idx" data-bs-toggle="collapse"
+                    [attr.aria-controls]="'collapse' + idx" aria-expanded="false">
+                    <b style="color: #e27a11;">
+                        <i class="bi bi-box-arrow-down"></i>
+                    </b>
+                    {{ item.question }}
+                </button>
+            </p>
+            <div class="collapse" [id]="'collapse' + idx">
+                <div style="background-color: #c2d9c1; border: 2px dotted green;" class="card card-body">
+                    <p>{{ item.answer }}</p>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
+<!-- Frequently Asked Questions  -->
