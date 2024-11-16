@@ -9,8 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Print sec
-        run: echo  "My secret value is:{{secrets.TES}}"
+      - name: Check secret
+        run: |
+          echo "My secret value is: ${{ secrets.TES }}"
 
       - name: Checkout repository
         uses: actions/checkout@v2
