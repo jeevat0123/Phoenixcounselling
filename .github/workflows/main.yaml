@@ -37,7 +37,7 @@ jobs:
           echo "${{ secrets.KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           eval $(ssh-agent -s)
-          ssh-add ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PASS_PHRASE }}" | ssh-add ~/.ssh/id_rsa
 
       - name: deploy to godaddy
         uses: appleboy/scp-action@v0.1.7
