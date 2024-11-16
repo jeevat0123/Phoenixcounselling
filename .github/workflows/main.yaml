@@ -29,6 +29,6 @@ jobs:
           server: "ftp.phoenixcounselling.in" # Ensure the server is defined correctly
           username: "id_rsa@phoenixcounselling.in" # Your FTP username
           password: "SR$9zzxsOz70" # FTP password stored as a GitHub secret
-          local-dir: "./dist/phoenix" # Replace with your Angular build output directory
+          local-dir: "./dist/phoenix/" # Replace with your Angular build output directory
           port: 21 # Default FTP port
           server-dir: "/home/o326rg7ugvxz/deploy/" # Replace with the remote directory on GoDaddy
