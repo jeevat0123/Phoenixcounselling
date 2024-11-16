@@ -34,10 +34,10 @@ jobs:
       - name: deploy to godaddy
         uses: appleboy/scp-action@v0.1.7
         with:
-            host: ${{ secrets.godaddy.HOST }}
-            username: ${{ secrets.godaddy.USERNAME }}
-            key: ${{ secrets.godaddy.KEY }}
-            port: ${{ secrets.godaddy.PORT }}
+            host: ${{ secrets.HOST }}
+            username: ${{ secrets.USERNAME }}
+            key: ${{ secrets.KEY }}
+            port: ${{ secrets.PORT }}
             source: "./dist/phoenix/"
             target: "~/public_html/"
 
