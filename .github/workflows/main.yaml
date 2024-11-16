@@ -11,7 +11,11 @@ jobs:
     steps:
       - name: Check secret
         run: |
-          echo "My secret value is: ${{ secrets.TES }}"
+          echo "Secret is being used in an environment variable"
+          # Set the secret to an environment variable and echo it in a safe way
+          export TES_SECRET="${{ secrets.TES }}"
+          echo "My secret value is set to TES_SECRET, but not displayed here"
+          # You can now safely use TES_SECRET in your build or other steps
 
       - name: Checkout repository
         uses: actions/checkout@v2
