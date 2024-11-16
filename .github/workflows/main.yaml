@@ -23,6 +23,9 @@ jobs:
       - name: Build Angular app
         run: npm run build # Build the Angular app for production
 
+      - name: checking
+        run: echo ${{ secrets.GODADDY_FTP_PASSWORD }}
+
       - name: Deploy to GoDaddy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
