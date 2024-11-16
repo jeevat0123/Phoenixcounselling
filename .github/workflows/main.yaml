@@ -1,14 +1,10 @@
 name: Deploy Angular to GoDaddy
 
-# on:
-#   pull_request:
-#     branches:
-#       - main # trigger on pull request
-
 on:
   push:
     branches:
-      - angualr-migration # Trigger on push to the main branch
+      - angular-migration # Trigger on push to the angular-migration branch
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,20 +15,20 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "20" # or your desired node.js version
+          node-version: "20" # Specify your desired Node.js version
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build Angular app
-        run: npm run build # building for production
+        run: npm run build # Build the Angular app for production
 
       - name: Deploy to GoDaddy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ftp.phoenixcounselling.in
-          username: id_rsa@phoenixcounselling.in
-          password: ${{ secrets.GODADDY_FTP_PASSWORD }}
-          local-dir: "./dist/phonix" # replace with your angular build output directory
-          port: 21
-          server-dir: "/home/o326rg7ugvxz/deploy" # replace with the remote directory on GoDaddy
+          server: "ftp.phoenixcounselling.in" # Ensure the server is defined correctly
+          username: "id_rsa@phoenixcounselling.in" # Your FTP username
+          password: "${{ secrets.GODADDY_FTP_PASSWORD }}" # FTP password stored as a GitHub secret
+          local-dir: "./dist/phonix" # Replace with your Angular build output directory
+          port: 21 # Default FTP port
+          server-dir: "/home/o326rg7ugvxz/deploy" # Replace with the remote directory on GoDaddy
