@@ -28,10 +28,10 @@ jobs:
         run: npm run build # building for production
 
       - name: Deploy to GoDaddy via FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.GODADDY_FTP_SERVER }}
-          username: ${{ secrets.GODADDY_FTP_USERNAME }}
+          server: ftp.phoenixcounselling.in
+          username: id_rsa@phoenixcounselling.in
           password: ${{ secrets.GODADDY_FTP_PASSWORD }}
           local-dir: "./dist/phonix" # replace with your angular build output directory
           port: 21
