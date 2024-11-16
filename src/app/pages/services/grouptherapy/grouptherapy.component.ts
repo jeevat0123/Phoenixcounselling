@@ -32,24 +32,24 @@ export class GrouptherapyComponent {
   `,
     faqs: [
       {
-        question: 'What is couples counseling, and how does it work?',
-        answer: 'Couples counseling is a type of therapy that helps partners in a relationship address issues, improve communication, and work through challenges. A trained therapist facilitates sessions where couples can discuss their concerns, emotions, and goals. Through open dialogue and therapeutic techniques, couples can gain a better understanding of their relationship dynamics and develop strategies for resolving conflicts.'
+        question: 'What is couples Counselling, and how does it work?',
+        answer: 'Couples Counselling is a type of therapy that helps partners in a relationship address issues, improve communication, and work through challenges. A trained therapist facilitates sessions where couples can discuss their concerns, emotions, and goals. Through open dialogue and therapeutic techniques, couples can gain a better understanding of their relationship dynamics and develop strategies for resolving conflicts.'
       },
       {
-        question: 'What types of issues can be addressed in couples counseling?',
-        answer: 'Couples counseling can help with a wide range of issues, including communication problems, conflicts, trust issues, infidelity, sexual concerns, differences in values or goals, and life transitions. It\'s not limited to addressing major problems; many couples seek counseling to enhance their relationship and prevent future issues.'
+        question: 'What types of issues can be addressed in couples Counselling?',
+        answer: 'Couples Counselling can help with a wide range of issues, including communication problems, conflicts, trust issues, infidelity, sexual concerns, differences in values or goals, and life transitions. It\'s not limited to addressing major problems; many couples seek Counselling to enhance their relationship and prevent future issues.'
       },
       {
-        question: 'How long does couples counseling take, and how often are sessions typically scheduled?',
-        answer: 'The duration of couples counseling varies based on the specific needs of the couple and the complexity of their issues. Typically, couples may attend weekly sessions, and the overall duration can range from a few weeks to several months. The therapist will work with the couple to establish a suitable schedule.'
+        question: 'How long does couples Counselling take, and how often are sessions typically scheduled?',
+        answer: 'The duration of couples Counselling varies based on the specific needs of the couple and the complexity of their issues. Typically, couples may attend weekly sessions, and the overall duration can range from a few weeks to several months. The therapist will work with the couple to establish a suitable schedule.'
       },
       {
-        question: 'Is everything discussed in couples counseling confidential?',
-        answer: 'Yes, couples counseling sessions are confidential. Therapists are bound by ethical and legal obligations to maintain client confidentiality. Information shared during sessions is not disclosed to anyone without the consent of both partners, with a few exceptions in cases involving harm to self or others.'
+        question: 'Is everything discussed in couples Counselling confidential?',
+        answer: 'Yes, couples Counselling sessions are confidential. Therapists are bound by ethical and legal obligations to maintain client confidentiality. Information shared during sessions is not disclosed to anyone without the consent of both partners, with a few exceptions in cases involving harm to self or others.'
       },
       {
         question: 'How can we find the right couples counselor for us?',
-        answer: 'Finding the right couples counselor is essential for a successful counseling experience. You can start by seeking recommendations from friends, family, or your primary care physician. Additionally, you can research local therapists, read reviews, and consider factors like their experience, approach, and compatibility with your needs and values. It\'s often helpful to have an initial consultation with a therapist to determine if they are a good fit for your relationship.'
+        answer: 'Finding the right couples counselor is essential for a successful Counselling experience. You can start by seeking recommendations from friends, family, or your primary care physician. Additionally, you can research local therapists, read reviews, and consider factors like their experience, approach, and compatibility with your needs and values. It\'s often helpful to have an initial consultation with a therapist to determine if they are a good fit for your relationship.'
       }
       // Add more FAQs here
     ]

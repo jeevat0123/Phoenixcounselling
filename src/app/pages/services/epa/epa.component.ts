@@ -12,9 +12,9 @@ export class EpaComponent {
   pageServiceData = {
     bannerTittle: 'Corporate wellness programs (EAP)',
     bannerContent: 'Discover healing at Phoenix Psychological Services in Chennai. Expert psychotherapist offering personalized online and offline therapy for a balanced and resilient life.',
-    serviceContent: 'Corporate wellness programs, often known as Employee Assistance Programs (EAP), are employer-sponsored initiatives designed to support the physical, mental, and emotional well-being of employees. These programs offer a range of services, including counseling, stress management, health assessments, fitness programs, and workshops on topics like nutrition and work-life balance. EAPs may also provide support for personal issues such as financial planning, substance abuse, and family counseling. By promoting a healthier and more supportive work environment, corporate wellness programs aim to enhance employee productivity, job satisfaction, and overall well-being, leading to a more engaged and resilient workforce.',
+    serviceContent: 'Corporate wellness programs, often known as Employee Assistance Programs (EAP), are employer-sponsored initiatives designed to support the physical, mental, and emotional well-being of employees. These programs offer a range of services, including Counselling, stress management, health assessments, fitness programs, and workshops on topics like nutrition and work-life balance. EAPs may also provide support for personal issues such as financial planning, substance abuse, and family Counselling. By promoting a healthier and more supportive work environment, corporate wellness programs aim to enhance employee productivity, job satisfaction, and overall well-being, leading to a more engaged and resilient workforce.',
     imagePath: '../assets/img/EPA/eap.png',
-    whatHappensContent: 'Corporate wellness programs, or Employee Assistance Programs (EAP), provide resources and support to employees for improving their physical, mental, and emotional well-being. These programs include health screenings, counseling, fitness activities, stress management workshops, and work-life balance support. By addressing personal and professional challenges, they foster a healthier, more productive workforce and promote a positive workplace culture.',
+    whatHappensContent: 'Corporate wellness programs, or Employee Assistance Programs (EAP), provide resources and support to employees for improving their physical, mental, and emotional well-being. These programs include health screenings, Counselling, fitness activities, stress management workshops, and work-life balance support. By addressing personal and professional challenges, they foster a healthier, more productive workforce and promote a positive workplace culture.',
     benefitsHtml: `
      <ul class="para-text">
         <li>
@@ -55,7 +55,7 @@ export class EpaComponent {
     faqs: [
       {
         question: 'What services are typically included in a corporate wellness program?',
-        answer: 'Corporate wellness programs often include health assessments, fitness classes, stress management workshops, mental health counseling, nutrition advice, and work-life balance resources.'
+        answer: 'Corporate wellness programs often include health assessments, fitness classes, stress management workshops, mental health Counselling, nutrition advice, and work-life balance resources.'
       },
       {
         question: 'Are Employee Assistance Programs (EAP) confidential?',
