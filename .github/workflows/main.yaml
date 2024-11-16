@@ -23,15 +23,12 @@ jobs:
       - name: Build Angular app
         run: npm run build # Build the Angular app for production
 
-      - name: checking
-        run: echo ${{ secrets.GODADDY_FTP_PASSWORD }}
-
       - name: Deploy to GoDaddy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: "ftp.phoenixcounselling.in" # Ensure the server is defined correctly
           username: "id_rsa@phoenixcounselling.in" # Your FTP username
-          password: ${{ secrets.GODADDY_FTP_PASSWORD }} # FTP password stored as a GitHub secret
+          password: "SR$9zzxsOz70" # FTP password stored as a GitHub secret
           local-dir: "./dist/phonix" # Replace with your Angular build output directory
           port: 21 # Default FTP port
           server-dir: "/home/o326rg7ugvxz/deploy" # Replace with the remote directory on GoDaddy
