@@ -34,4 +34,5 @@ jobs:
           username: ${{ secrets.GODADDY_FTP_USERNAME }}
           password: ${{ secrets.GODADDY_FTP_PASSWORD }}
           local-dir: "./dist/phonix" # replace with your angular build output directory
-          remote-dir: "/home/o326rg7ugvxz/deploy" # replace with the remote directory on GoDaddy
+          port: 21
+          server-dir: "/home/o326rg7ugvxz/deploy" # replace with the remote directory on GoDaddy
