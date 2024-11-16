@@ -3,7 +3,7 @@ name: Deploy Angular to GoDaddy
 on:
   push:
     branches:
-      - angular-migration # Trigger on push to the angular-migration branch
+      - angualr-migration # Trigger on push to the angular-migration branch
 
 jobs:
   build:
