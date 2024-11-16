@@ -24,7 +24,7 @@ jobs:
         run: npm run build # Build the Angular app for production
       
       - name: copy file via ssh key
-        run: echo ${{ secrets.godaddy.HOST }}
+        run: echo ${{ secrets.TES }}
         # uses: appleboy/scp-action@v0.1.7
         # with:
         #     host: ${{ secrets.godaddy.HOST }}
