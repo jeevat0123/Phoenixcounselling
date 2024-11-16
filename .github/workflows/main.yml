@@ -3,8 +3,8 @@ name: Deploy Angular to GoDaddy
 on:
   pull_request:
     branches:
-    - main # trigger on pull request
-    
+      - main # trigger on pull request
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,13 +15,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20'  # Or your desired Node.js version
+          node-version: "20" # or your desired node.js version
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build Angular app
-        run: npm run build # bulding for production
+        run: npm run build # building for production
 
       - name: Deploy to GoDaddy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
@@ -29,5 +29,5 @@ jobs:
           server: ${{ secrets.GODADDY_FTP_SERVER }}
           username: ${{ secrets.GODADDY_FTP_USERNAME }}
           password: ${{ secrets.GODADDY_FTP_PASSWORD }}
-          local-dir: './dist/phonix'  # Replace with your Angular build output directory
-          remote-dir: '/home/o326rg7ugvxz/deploy'  # Replace with the remote directory on GoDaddy
+          local-dir: "./dist/phonix" # replace with your angular build output directory
+          remote-dir: "/home/o326rg7ugvxz/deploy" # replace with the remote directory on GoDaddy
