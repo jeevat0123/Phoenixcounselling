@@ -32,25 +32,26 @@ export class GrouptherapyComponent {
   `,
     faqs: [
       {
-        question: 'What is couples Counselling, and how does it work?',
-        answer: 'Couples Counselling is a type of therapy that helps partners in a relationship address issues, improve communication, and work through challenges. A trained therapist facilitates sessions where couples can discuss their concerns, emotions, and goals. Through open dialogue and therapeutic techniques, couples can gain a better understanding of their relationship dynamics and develop strategies for resolving conflicts.'
+        question: 'What is group counselling, and how does it differ from individual counselling?',
+        answer: 'Group counselling is a form of therapy where a small group of individuals, typically led by a trained therapist, come together to discuss and address their concerns and challenges. It differs from individual counselling as it involves sharing experiences and receiving support from peers in addition to the therapist.'
       },
       {
-        question: 'What types of issues can be addressed in couples Counselling?',
-        answer: 'Couples Counselling can help with a wide range of issues, including communication problems, conflicts, trust issues, infidelity, sexual concerns, differences in values or goals, and life transitions. It\'s not limited to addressing major problems; many couples seek Counselling to enhance their relationship and prevent future issues.'
+        question: 'What types of issues can be addressed in group counselling?',
+        answer: 'Group counselling can be beneficial for a wide range of issues, including anxiety, depression, addiction, grief, relationship difficulties, stress, and personal growth. Different groups may focus on specific themes or concerns.'
       },
       {
-        question: 'How long does couples Counselling take, and how often are sessions typically scheduled?',
-        answer: 'The duration of couples Counselling varies based on the specific needs of the couple and the complexity of their issues. Typically, couples may attend weekly sessions, and the overall duration can range from a few weeks to several months. The therapist will work with the couple to establish a suitable schedule.'
+        question: 'How large are group counselling sessions, and who else will be in the group?',
+        answer: 'Group sizes can vary, but they typically consist of 6 to 12 participants. The composition of the group may vary, with members having different backgrounds and concerns, offering diverse perspectives and support.'
       },
       {
-        question: 'Is everything discussed in couples Counselling confidential?',
-        answer: 'Yes, couples Counselling sessions are confidential. Therapists are bound by ethical and legal obligations to maintain client confidentiality. Information shared during sessions is not disclosed to anyone without the consent of both partners, with a few exceptions in cases involving harm to self or others.'
+        question: 'Is what I share in group counselling confidential, and what about privacy?',
+        answer: 'Group counselling sessions are typically confidential, and participants are expected to respect each other\'s privacy. The therapist will establish ground rules for confidentiality at the beginning of the group. However, there may be exceptions, such as concerns for the safety of oneself or others, which the therapist would need to address.'
       },
       {
-        question: 'How can we find the right couples counselor for us?',
-        answer: 'Finding the right couples counselor is essential for a successful Counselling experience. You can start by seeking recommendations from friends, family, or your primary care physician. Additionally, you can research local therapists, read reviews, and consider factors like their experience, approach, and compatibility with your needs and values. It\'s often helpful to have an initial consultation with a therapist to determine if they are a good fit for your relationship.'
-      }
+        question: 'How long does group counselling last, and how often are the sessions?',
+        answer: 'The duration and frequency of group counselling sessions can vary. Some groups may be time-limited, spanning a specific number of sessions (e.g., 6-8 weeks), while others may be ongoing. The frequency of sessions may range from weekly to monthly, depending on the goals and needs of the group.'
+      },
+
       // Add more FAQs here
     ]
   };

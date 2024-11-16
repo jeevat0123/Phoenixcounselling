@@ -26,27 +26,26 @@ export class AdolescentCounsellingComponent {
             well-being.</p>
   `,
     faqs: [
-      // TODO need to change to adolecennt conseling content
       {
-        question: 'What is couples Counselling, and how does it work?',
-        answer: 'Couples Counselling is a type of therapy that helps partners in a relationship address issues, improve communication, and work through challenges. A trained therapist facilitates sessions where couples can discuss their concerns, emotions, and goals. Through open dialogue and therapeutic techniques, couples can gain a better understanding of their relationship dynamics and develop strategies for resolving conflicts.'
+        question: 'What is the typical duration of adolescent counselling?',
+        answer: 'The duration of counselling varies depending on the individual\'s needs and progress. Some may benefit from short-term interventions, while others with more complex issues might require longer-term support.'
       },
       {
-        question: 'What types of issues can be addressed in couples Counselling?',
-        answer: 'Couples Counselling can help with a wide range of issues, including communication problems, conflicts, trust issues, infidelity, sexual concerns, differences in values or goals, and life transitions. It\'s not limited to addressing major problems; many couples seek Counselling to enhance their relationship and prevent future issues.'
+        question: 'Is adolescent counselling confidential?',
+        answer: 'Yes, adolescent counselling is confidential. However, there are legal and ethical exceptions where the counselor may need to disclose information, such as if the adolescent is at risk of harm to themselves or others.'
       },
       {
-        question: 'How long does couples Counselling take, and how often are sessions typically scheduled?',
-        answer: 'The duration of couples Counselling varies based on the specific needs of the couple and the complexity of their issues. Typically, couples may attend weekly sessions, and the overall duration can range from a few weeks to several months. The therapist will work with the couple to establish a suitable schedule.'
+        question: 'How can I tell if my teenager needs counselling?',
+        answer: 'Look for signs like sudden changes in behavior, declining school performance, withdrawal from social activities, or expressions of persistent sadness or anxiety. If you notice any of these, it may be beneficial to seek professional guidance.'
       },
       {
-        question: 'Is everything discussed in couples Counselling confidential?',
-        answer: 'Yes, couples Counselling sessions are confidential. Therapists are bound by ethical and legal obligations to maintain client confidentiality. Information shared during sessions is not disclosed to anyone without the consent of both partners, with a few exceptions in cases involving harm to self or others.'
+        question: 'What types of issues can adolescent counselling address?',
+        answer: 'Adolescent counselling can address a wide range of issues, including anxiety, depression, academic stress, peer relationships, family conflicts, self-esteem, and behavior problems. Counselors tailor their approach to the specific needs of the teenager.'
       },
       {
-        question: 'How can we find the right couples counselor for us?',
-        answer: 'Finding the right couples counselor is essential for a successful Counselling experience. You can start by seeking recommendations from friends, family, or your primary care physician. Additionally, you can research local therapists, read reviews, and consider factors like their experience, approach, and compatibility with your needs and values. It\'s often helpful to have an initial consultation with a therapist to determine if they are a good fit for your relationship.'
-      }
+        question: 'Can parents be involved in the counselling process?',
+        answer: 'Yes, parents can be involved in the counselling process. In many cases, family sessions can be valuable for improving communication and addressing issues within the family dynamics, but the level of involvement depends on the teenager\'s preferences and circumstances.'
+      },
       // Add more FAQs here
     ]
   };
