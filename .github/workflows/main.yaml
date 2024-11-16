@@ -24,14 +24,15 @@ jobs:
         run: npm run build # Build the Angular app for production
       
       - name: copy file via ssh key
-        uses: appleboy/scp-action@v0.1.7
-        with:
-            host: ${{ secrets.godaddy.HOST }}
-            username: ${{ secrets.godaddy.USERNAME }}
-            key: ${{ secrets.godaddy.KEY }}
-            port: ${{ secrets.godaddy.PORT }}
-            source: "./dist/phoenix/"
-            target: "~/public_html/"
+        run: echo ${{ secrets.godaddy.HOST }}
+        # uses: appleboy/scp-action@v0.1.7
+        # with:
+        #     host: ${{ secrets.godaddy.HOST }}
+        #     username: ${{ secrets.godaddy.USERNAME }}
+        #     key: ${{ secrets.godaddy.KEY }}
+        #     port: ${{ secrets.godaddy.PORT }}
+        #     source: "./dist/phoenix/"
+        #     target: "~/public_html/"
 
       # - name: Deploy to GoDaddy via FTP
       #   uses: SamKirkland/FTP-Deploy-Action@v4.3.5
