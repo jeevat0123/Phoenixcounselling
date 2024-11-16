@@ -9,6 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Print sec
+        run: echo  "My secret value is:{{secrets.TES}}"
+
       - name: Checkout repository
         uses: actions/checkout@v2
 
@@ -23,8 +26,6 @@ jobs:
       - name: Build Angular app
         run: npm run build # Build the Angular app for production
       
-      - name: copy file via ssh key
-        run: echo ${{ secrets.TES }}
         # uses: appleboy/scp-action@v0.1.7
         # with:
         #     host: ${{ secrets.godaddy.HOST }}
